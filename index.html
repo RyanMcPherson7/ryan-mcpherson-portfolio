@@ -10,12 +10,95 @@
 </head>
 <body>
 
-    <h1>Hi, I'm <span class="special">Ryan</span></h1>
-    <p>I'm a <span class="special">student</span> at University of Florida studying computer science. I love
-        programming and building <span class="special">fun projects</span>! 
-    </p>
+    <nav>
+        <h1>Ryan McPherson</h1>
+        <ul>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+        <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <g id="Artboard1" transform="matrix(0.166667,0,0,0.166667,0,0)">
+                <rect x="0" y="0" width="600" height="600" style="fill:none;"/>
+                <g transform="matrix(6,0,0,6,0,0)">
+                    <path d="M40.072,17.261C39.718,16.908 39.239,16.709 38.739,16.709C38.239,16.709 37.76,16.908 37.406,17.261C32.137,22.531 12.787,41.88 7.518,47.15C7.164,47.503 6.966,47.983 6.966,48.482C6.966,48.982 7.164,49.462 7.518,49.815C12.787,55.085 32.137,74.434 37.406,79.704C37.76,80.057 38.239,80.256 38.739,80.256C39.239,80.256 39.718,80.057 40.072,79.704C42.239,77.537 46.5,73.275 48.667,71.109C49.403,70.372 49.403,69.179 48.667,68.443C44.843,64.619 33.864,53.639 30.039,49.815C29.303,49.079 29.303,47.886 30.039,47.15C33.864,43.325 44.843,32.346 48.667,28.522C49.403,27.786 49.403,26.592 48.667,25.856C46.5,23.69 42.239,19.428 40.072,17.261Z" style="fill:white;"/>
+                </g>
+                <g transform="matrix(6,0,0,6,215.446,0)">
+                    <path d="M40.072,17.261C39.718,16.908 39.239,16.709 38.739,16.709C38.239,16.709 37.76,16.908 37.406,17.261C32.137,22.531 12.787,41.88 7.518,47.15C7.164,47.503 6.966,47.983 6.966,48.482C6.966,48.982 7.164,49.462 7.518,49.815C12.787,55.085 32.137,74.434 37.406,79.704C37.76,80.057 38.239,80.256 38.739,80.256C39.239,80.256 39.718,80.057 40.072,79.704C42.239,77.537 46.5,73.275 48.667,71.109C49.403,70.372 49.403,69.179 48.667,68.443C44.843,64.619 33.864,53.639 30.039,49.815C29.303,49.079 29.303,47.886 30.039,47.15C33.864,43.325 44.843,32.346 48.667,28.522C49.403,27.786 49.403,26.592 48.667,25.856C46.5,23.69 42.239,19.428 40.072,17.261Z" style="fill:white;"/>
+                </g>
+            </g>
+        </svg>
+    </nav>
 
-    <button>Resume</button>
+    <header>
+        <h1>Hi, I'm <span class="special">Ryan</span></h1>
+        <p>
+            I'm a university student looking to gain valueable experience
+            via <span class="special">internships</span> and <span class="special">job oppourtunities</span>. 
+            I love building fun projects!
+        </p>
+        <button id="header-resume-button">
+            <a href="#">
+                Résumé
+            </a>
+        </button>
+    </header>
 
+    
+
+    <main>
+        <!-- projects -->
+        <div id="project-container">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project">
+                <img src="images/sample-project.jpg" alt="">
+                <h3 class="project-title">Project 1</h3>
+                <div class="project-tool-list">
+                    <img src="images/html5-logo.png" alt="">
+                    <img src="images/css3-logo.png" alt="">
+                </div>
+            </div>
+            <button class="project-view">View</button>
+
+            <div class="project">
+                <img src="images/sample-project.jpg" alt="">
+                <h3 class="project-title">Project 1</h3>
+                <div class="project-tool-list">
+                    <img src="images/html5-logo.png" alt="">
+                    <img src="images/css3-logo.png" alt="">
+                </div>
+            </div>
+            <button class="project-view">View</button>
+
+            <div class="project">
+                <img src="images/sample-project.jpg" alt="">
+                <h3 class="project-title">Project 1</h3>
+                <div class="project-tool-list">
+                    <img src="images/html5-logo.png" alt="">
+                    <img src="images/css3-logo.png" alt="">
+                </div>
+            </div>
+            <button class="project-view">View</button>
+
+        <!-- contact -->
+        <div id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <form>
+                <label for="name-input">Name</label>
+                <input type="text" value="name" id="name-input">
+
+                <label for="email-input">Email</label>
+                <input type="email" value="email" id="email-input">
+
+                <label for="subject-input">Subject</label>
+                <input type="text" value="subject" id="subject-input">
+
+                <label for="message-input">Message</label>
+                <input type="text" value="message" id="message-input">
+            </form>
+        </div>
+    </main>
+    
 </body>
 </html>

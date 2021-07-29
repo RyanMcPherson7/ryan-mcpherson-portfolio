@@ -4,8 +4,8 @@
     --color-primary: #FFF;
     --color-secondary: #070707;
 
-    /* --color-accent: #825FE3; */
-    /* --color-accent: #3498DB; */
+    --color-accent: #825FE3;
+    --color-accent-dark: #6536e6;
     /* --color-accent: deepPink; */
     /* --color-accent: Tomato; */
     --color-accent: SpringGreen;
@@ -20,49 +20,94 @@
 html {
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-secondary);
+    overflow-x: hidden;
     color: var(--color-primary);
+    font-size: 1rem;
 }
 
-body {
-    padding: 3rem;
-}
-
-h1 {
-    font-size: 4rem;
-    color: var(--color-primary);
-}
-
-h2 {
-    color: var(--color-accent);
-}
-
-p {
-    margin-top: 1rem;
-    font-size: 1.25rem;
-    font-weight: bold;
+a {
+    text-decoration: none;
 }
 
 .special {
-    color: var(--color-accent);
+    color: var(--color-accent)
 }
 
-button {
-    background: none;
-    border: 0.25rem solid var(--color-accent);
-    color: var(--color-accent);
-    padding: 0.4rem 1rem;
-    border-radius: 2rem;
-    margin: 1rem;
+/* NAVIGATION SECTION */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-accent);
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    /* Will use side menu for mobile version */
+    display: flex;
+    display: none;
+}
+
+nav ul li {
+    color: var(--color-primary);
     font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+nav h1 {
+    color: var(--color-primary);
+    padding: 1rem;
     font-size: 1.25rem;
-    transition: 0.35s ease-in-out;
 }
 
-button:hover {
-    background: var(--color-accent);
-    color: var(--color-secondary);
+nav svg {
+    height: 4rem;
+    width: 4rem;
+    padding-right:1rem;
 }
 
-::selection {
-    background: var(--color-accent);
+/* HEADER SECTION */
+
+header {
+    height: 100vh;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
+
+header h1 {
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+#header-resume-button {
+    background: var(--color-accent);
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    width: 11rem;
+    margin: 0 auto;
+}
+
+#header-resume-button a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+
+
+
+
