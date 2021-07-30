@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0
+    , user-scalable=no">
     <title>Ryan McPherson</title>
 
     <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://kit.fontawesome.com/1fe2814a4f.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -16,17 +20,7 @@
             <li>Projects</li>
             <li>Contact</li>
         </ul>
-        <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-            <g id="Artboard1" transform="matrix(0.166667,0,0,0.166667,0,0)">
-                <rect x="0" y="0" width="600" height="600" style="fill:none;"/>
-                <g transform="matrix(6,0,0,6,0,0)">
-                    <path d="M40.072,17.261C39.718,16.908 39.239,16.709 38.739,16.709C38.239,16.709 37.76,16.908 37.406,17.261C32.137,22.531 12.787,41.88 7.518,47.15C7.164,47.503 6.966,47.983 6.966,48.482C6.966,48.982 7.164,49.462 7.518,49.815C12.787,55.085 32.137,74.434 37.406,79.704C37.76,80.057 38.239,80.256 38.739,80.256C39.239,80.256 39.718,80.057 40.072,79.704C42.239,77.537 46.5,73.275 48.667,71.109C49.403,70.372 49.403,69.179 48.667,68.443C44.843,64.619 33.864,53.639 30.039,49.815C29.303,49.079 29.303,47.886 30.039,47.15C33.864,43.325 44.843,32.346 48.667,28.522C49.403,27.786 49.403,26.592 48.667,25.856C46.5,23.69 42.239,19.428 40.072,17.261Z" style="fill:white;"/>
-                </g>
-                <g transform="matrix(6,0,0,6,215.446,0)">
-                    <path d="M40.072,17.261C39.718,16.908 39.239,16.709 38.739,16.709C38.239,16.709 37.76,16.908 37.406,17.261C32.137,22.531 12.787,41.88 7.518,47.15C7.164,47.503 6.966,47.983 6.966,48.482C6.966,48.982 7.164,49.462 7.518,49.815C12.787,55.085 32.137,74.434 37.406,79.704C37.76,80.057 38.239,80.256 38.739,80.256C39.239,80.256 39.718,80.057 40.072,79.704C42.239,77.537 46.5,73.275 48.667,71.109C49.403,70.372 49.403,69.179 48.667,68.443C44.843,64.619 33.864,53.639 30.039,49.815C29.303,49.079 29.303,47.886 30.039,47.15C33.864,43.325 44.843,32.346 48.667,28.522C49.403,27.786 49.403,26.592 48.667,25.856C46.5,23.69 42.239,19.428 40.072,17.261Z" style="fill:white;"/>
-                </g>
-            </g>
-        </svg>
+        <img src="images/toggle-icon.svg" alt="toggle navigation icon">
     </nav>
 
     <header>
@@ -37,68 +31,81 @@
             I love building fun projects!
         </p>
         <button id="header-resume-button">
-            <a href="#">
+            <a href="Resume Spring 2021.pdf" download target="_blank">
                 Résumé
             </a>
         </button>
+        <a id="scroll-down-button" href="#project-container"><img src="images/scroll-down.svg" alt="scroll down icon"></a>
     </header>
-
     
-
-    <main>
-        <!-- projects -->
-        <div id="project-container">
-            <h2 class="section-title">Projects</h2>
-
-            <div class="project">
-                <img src="images/sample-project.jpg" alt="">
-                <h3 class="project-title">Project 1</h3>
-                <div class="project-tool-list">
-                    <img src="images/html5-logo.png" alt="">
-                    <img src="images/css3-logo.png" alt="">
-                </div>
+    <!-- projects -->
+    
+    <div id="project-container">
+        <h2 class="section-title">Projects</h2>
+        <div class="project">
+            <div class="project-image"></div>
+            <h3 class="project-title">Project Title</h3>
+            <div class="project-tool-list">
+                <img src="images/html5-logo.png" alt="">
+                <img src="images/css3-logo.png" alt="">
             </div>
-            <button class="project-view">View</button>
-
-            <div class="project">
-                <img src="images/sample-project.jpg" alt="">
-                <h3 class="project-title">Project 1</h3>
-                <div class="project-tool-list">
-                    <img src="images/html5-logo.png" alt="">
-                    <img src="images/css3-logo.png" alt="">
-                </div>
-            </div>
-            <button class="project-view">View</button>
-
-            <div class="project">
-                <img src="images/sample-project.jpg" alt="">
-                <h3 class="project-title">Project 1</h3>
-                <div class="project-tool-list">
-                    <img src="images/html5-logo.png" alt="">
-                    <img src="images/css3-logo.png" alt="">
-                </div>
-            </div>
-            <button class="project-view">View</button>
-
-        <!-- contact -->
-        <div id="contact">
-            <h2 class="section-title">Contact</h2>
-
-            <form>
-                <label for="name-input">Name</label>
-                <input type="text" value="name" id="name-input">
-
-                <label for="email-input">Email</label>
-                <input type="email" value="email" id="email-input">
-
-                <label for="subject-input">Subject</label>
-                <input type="text" value="subject" id="subject-input">
-
-                <label for="message-input">Message</label>
-                <input type="text" value="message" id="message-input">
-            </form>
+            <button class="project-details-button">Details</button>
         </div>
-    </main>
+
+        <div class="project">
+            <div class="project-image"></div>
+            <h3 class="project-title">Project Title</h3>
+            <div class="project-tool-list">
+                <img src="images/html5-logo.png" alt="">
+                <img src="images/css3-logo.png" alt="">
+            </div>
+            <button class="project-details-button">Details</button>
+        </div>
+
+        <div class="project">
+            <div class="project-image"></div>
+            <h3 class="project-title">Project Title</h3>
+            <div class="project-tool-list">
+                <img src="images/html5-logo.png" alt="">
+                <img src="images/css3-logo.png" alt="">
+            </div>
+            <button class="project-details-button">Details</button>
+        </div>
+
+    </div>
+
+    <!-- contact -->
+    <div id="contact-container">
+        <h2 class="section-title contact-section-title">Contact</h2>
+
+        <form>
+            <div>
+                <label for="name-input">Name</label>
+                <input type="text" id="name-input">
+            </div>
+            <div>
+                <label for="email-input">Email</label>
+            <input type="email" id="email-input">
+            </div>
+            <div>
+                <label for="subject-input">Subject</label>
+            <input type="text" id="subject-input">
+            </div>
+            <div>
+                <label for="message-input">Message</label>
+                <textarea id="messasge-iuput" cols="30" rows="8"></textarea>
+            </div>
+        </form>
+        <div id="contact-links">
+            <a href="https://github.com/RyanMcPherson7" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/ryan-mcpherson-2795b81b6/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p>Copyright &copy; 2021 Ryan McPherson, All Rights Reserved</p>
+    </footer>
     
 </body>
 </html>

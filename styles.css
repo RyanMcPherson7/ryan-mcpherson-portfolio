@@ -8,7 +8,10 @@
     --color-accent-dark: #6536e6;
     /* --color-accent: deepPink; */
     /* --color-accent: Tomato; */
-    --color-accent: SpringGreen;
+    /* --color-accent: SpringGreen; */
+
+    /* --color-primary: #070707;
+    --color-secondary: white; */
 }
 
 * {
@@ -20,9 +23,9 @@
 html {
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-secondary);
-    overflow-x: hidden;
     color: var(--color-primary);
-    font-size: 1rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -31,6 +34,12 @@ a {
 
 .special {
     color: var(--color-accent)
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 5rem 0 2rem;
 }
 
 /* NAVIGATION SECTION */
@@ -42,6 +51,14 @@ nav {
     background-color: var(--color-accent);
     position: sticky;
     top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav h1 {
+    color: var(--color-primary);
+    padding: 1rem;
+    font-size: 1.25rem;
 }
 
 nav ul {
@@ -58,47 +75,50 @@ nav ul li {
     padding: 1rem;
 }
 
-nav h1 {
-    color: var(--color-primary);
-    padding: 1rem;
-    font-size: 1.25rem;
-}
-
-nav svg {
+nav img {
     height: 4rem;
-    width: 4rem;
-    padding-right:1rem;
+    width: 5rem;
+    padding: 0 1rem;
+    fill: black;
 }
 
 /* HEADER SECTION */
 
 header {
-    height: 100vh;
+    height: 95vh;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
+    position: relative;
+    text-align: center;
+    align-items: center;
 }
 
 header h1 {
     font-size: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 7vh 0;
     font-weight: bold;
 }
 
 header p {
     font-weight: bold;
     font-size: 1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 10vh;
 }
 
 #header-resume-button {
     background: var(--color-accent);
     border: none;
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 2rem;
-    width: 11rem;
+    width: 10rem;
     margin: 0 auto;
+    transition: 0.3s ease-in-out;
+}
+
+#header-resume-button:hover {
+    background-color: var(--color-accent-dark);
+    cursor: pointer;
 }
 
 #header-resume-button a {
@@ -107,7 +127,112 @@ header p {
     color: var(--color-primary);
 }
 
+#scroll-down-button {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    /* position: relative; */
+    bottom: 10vh;
+    margin: 0 auto;
+}
+
+/* PROJECT SECTION */
+
+#project-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.project {
+    background: var(--color-primary);
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+}
+
+.project-image {
+    width: 100%;
+    height: 15rem;
+    border-radius: 2rem 2rem 0 0;
+    background-image: url(images/sample-project.jpg);
+    background-position: center;
+}
+
+.project-title {
+    color: var(--color-secondary);
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.project-tool-list {
+    padding: 0 1rem;
+}
+
+.project-tool-list img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.project-details-button {
+    background-color: var(--color-accent);
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0.5rem 0 1rem;
+    color: var(--color-primary);
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.project-details-button:hover {
+    background-color: var(--color-accent-dark);
+    cursor: pointer;
+}
+
+/* CONTACT SECTION */
+
+.contact-section-title {
+    margin-top: 0;
+}
+
+#contact-container form {
+    /* display: flex; */
+    display: inline-block;
+    /* flex-direction: column; */
+    align-items: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.fa-github, .fa-linkedin {
+    color: var(--color-primary);
+    padding: 0 0.75rem 2rem;
+}
+
+#contact-container label {
+    width: 10rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 8rem;
+}
+
+#contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 
+/* FOOTER SECTION */
 
-
+footer {
+    background-color: var(--color-accent);
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    text-align: center;
+}
