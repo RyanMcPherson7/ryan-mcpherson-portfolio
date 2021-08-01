@@ -209,11 +209,13 @@ header p {
 
 .project-tool-list {
     padding: 0 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .project-tool-list img {
     width: 2rem;
     height: 2rem;
+    margin: 0 0.2rem;
 }
 
 .project-details-button {
