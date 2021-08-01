@@ -56,10 +56,8 @@ nav {
 nav h1 a {
     font-size: 1.5rem;
     padding: 1rem;
-    font-size: 1.25rem;
     color: var(--color-primary);
     transition: 0.3s ease-in-out;
-    
 }
 
 nav h1 a:hover {
@@ -163,15 +161,10 @@ header p {
 }
 
 .project {
-    background: var(--color-primary);
-    color: var(--color-secondary);
-
-    background: var(--color-secondary-light);
+    background-color: var(--color-secondary-light);
     color: var(--color-primary);
-
     margin-bottom: 2rem;
     border-radius: 2rem;
-    min-width: 20rem;
     max-width: 30rem;
 }
 
@@ -213,8 +206,8 @@ header p {
 }
 
 .project-tool-list img {
-    width: 2rem;
-    height: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
     margin: 0 0.2rem;
 }
 
@@ -304,6 +297,10 @@ footer {
     text-align: center;
 }
 
+footer p {
+    padding: 0 2.5rem;
+}
+
 /* MEDIA QUERIES */
 
 /* smaller screen devices */
@@ -337,7 +334,60 @@ footer {
 
     #project-section-title { font-size: 3rem; }
 
-    .project { 
-        width: 60rem;
+    .project { max-width: 40rem; }
+
+    .project-title { font-size: 2rem; }
+
+    .project p { font-size: 1rem; }
+
+    .project-tool-list img { width: 2rem; height: 2rem; }
+
+    .project-details-button { transform: scale(1.25); margin-bottom: 1.7rem; }
+
+    #contact-section-title { font-size: 4rem; }
+
+    #contact-container p { font-size: 1.5rem; }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 40rem;
+        font-size: 1.4rem;
+        padding: 0.8rem;
+    }
+
+    /* TODO: update linkedin and github sized by adding/removing the sizing classes with JavaScript */
+
+    footer { padding: 1rem 9rem; }
+
+    footer p { font-size: 1.5rem; }
+} 
+
+/* large screen devices */
+
+@media (min-width: 1500px) {
+
+    header, 
+    #project-container,
+    #contact-container { 
+        max-width: 1500px; 
+        margin: 0 auto; 
+    }
+
+    header h1 { font-size: 6rem; }
+
+    header p { font-size: 3rem; }
+
+    #header-resume-button { transform: scale(1.4); }
+
+    #project-item-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .project {
+        margin-bottom: 0.5rem;
+        /* padding: 0; */
     }
 }
