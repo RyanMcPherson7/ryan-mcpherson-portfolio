@@ -40,17 +40,19 @@ a {
 
 /* NAVIGATION SECTION */
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
-    background-color: var(--color-accent);
+#nav-container {
     background-color: var(--color-secondary-light);
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
 }
 
 nav h1 a {
@@ -367,6 +369,7 @@ footer p {
 
 @media (min-width: 1500px) {
 
+    nav,
     header, 
     #project-container,
     #contact-container { 
