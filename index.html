@@ -38,12 +38,15 @@
             I love building fun projects!
         </p>
         <button id="header-resume-button">
-            <a href="Resume Spring 2021.pdf" download target="_blank">
+            <a href="Resume Spring 2021.pdf" target="_blank">
                 Résumé
             </a>
         </button>
         <a id="scroll-down-button" href="#project-container"><img src="images/scroll-down.svg" alt="scroll down icon"></a>
     </header>
+
+<a href="Resume Spring 2021.pdf" target="_blank"><i class="far fa-file fa-2x"></i></a>
+
     
     <!-- projects -->
     
@@ -51,6 +54,22 @@
         <h2 id="project-section-title">Projects</h2>
 
         <div id="project-item-container">
+            <div class="project">
+                <div class="project-image">
+                    <div class="image-cover"></div>
+                </div>
+                <h3 class="project-title">Project Title</h3>
+                <p><span class="special">Overview:</span> Lorem, ipsum dolor sit amet </p>
+                <p><span class="special">Features:</span> Responsive design, recursion, object-oriented programming, e-comerse</p>
+                <p>Tools used:</p>
+                <div class="project-tool-list">
+                    <img src="images/html5-logo.png" alt="">
+                    <img src="images/css3-logo.png" alt="">
+                    <img src="images/js-logo.png" alt="">
+                </div>
+                <button class="project-details-button"><a href="#">Repository</a></button>
+            </div>
+
             <div class="project">
                 <div class="project-image">
                     <div class="image-cover"></div>
@@ -112,6 +131,7 @@
             <input type="email" id="email-input" placeholder="Email">
             <input type="text" id="subject-input" placeholder="Subject">
             <textarea id="messasge-iuput" cols="15" rows="7" placeholder="Message"></textarea>
+            <button id="contact-send-button"><a href="#">Send</a></button>
         </form>
         <div id="contact-links">
             <a href="https://github.com/RyanMcPherson7" target="_blank"><i class="fab fa-github fa-3x"></i></a>
