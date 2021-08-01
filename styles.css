@@ -3,6 +3,8 @@
 :root {
     --color-primary: #FFF;
     --color-secondary: #070707;
+    --color-secondary-light: #2b2b2b;
+    --color-secondary-light: #202020;
 
     --color-accent: #825FE3;
     --color-accent-dark: #6536e6;
@@ -41,39 +43,54 @@ a {
 nav {
     display: flex;
     justify-content: space-between;
+    justify-items: center;
     align-items: center;
     background-color: var(--color-accent);
+    background-color: var(--color-secondary-light);
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1000;
 }
 
-nav h1 {
-    color: var(--color-primary);
+nav h1 a {
+    font-size: 1.5rem;
     padding: 1rem;
     font-size: 1.25rem;
+    color: var(--color-primary);
+    transition: 0.3s ease-in-out;
+    
+}
+
+nav h1 a:hover {
+    color: var(--color-accent);
+    cursor: pointer;
 }
 
 nav ul {
     list-style: none;
-    /* Will use side menu for mobile version */
-    display: flex;
     display: none;
 }
 
 nav ul li {
-    color: var(--color-primary);
     font-weight: bold;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 0;
+}
+
+nav ul li a {
+    color: var(--color-primary);
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--color-accent)
 }
 
 nav img {
     height: 4rem;
     width: 5rem;
     padding: 0 1rem;
-    fill: black;
 }
 
 /* HEADER SECTION */
@@ -135,6 +152,7 @@ header p {
 #project-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 1.5rem;
     text-align: center;
 }
@@ -147,8 +165,11 @@ header p {
 
 .project {
     background: var(--color-primary);
+    color: var(--color-secondary);
     margin-bottom: 2rem;
     border-radius: 2rem;
+    min-width: 20rem;
+    max-width: 30rem;
 }
 
 .project-image {
@@ -159,10 +180,26 @@ header p {
     background-position: center;
 }
 
+/* used to darken the project image */
+.image-cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem 2rem 0 0;
+    background-color: black;
+    opacity: 0.2;
+    z-index: 1;
+}
+
 .project-title {
-    color: var(--color-secondary);
     margin: 0.5rem;
     font-size: 1.5rem;
+}
+
+.project p {
+    font-weight: bold;
+    text-align: center;
+    padding: 0 1rem 1rem;
+    font-size: 0.9rem;
 }
 
 .project-tool-list {
@@ -186,6 +223,10 @@ header p {
     transition: 0.3s ease-in-out;
 }
 
+.project-details-button a {
+    color: var(--color-primary);
+}
+
 .project-details-button:hover {
     background-color: var(--color-accent-dark);
     cursor: pointer;
@@ -202,58 +243,94 @@ header p {
 #contact-container p {
     text-align: center;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 #contact-container form {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-weight: bold;
-    padding: 1rem;
-    text-align: center;
     width: auto;
-}
-
-.fa-github, .fa-linkedin {
-    color: var(--color-primary);
-    padding: 0 0.75rem 2rem;
-}
-
-#contact-container label {
-    display: inline-block;
-    width: 5rem;
-    text-align: right;
-}
-
-#contact-container form > div {
-    margin-top: 0.5rem;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    padding: 0.3rem;
+    padding: 0.6rem;
     color: var(--color-primary);
     font-weight: bold;
+    width: 20rem;
+    margin: 0.3rem; 
+    background-color: var(--color-secondary-light);
+    border: none;
+    border-radius: 0.2rem;
 }
 
-input[type="text"],
-input[type="email"] {
-    background: none;
-    border: 0.2rem solid var(--color-primary);
-    border-radius: 0.5rem;
+textarea {
+    resize: none;
 }
 
 #contact-links {
+    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+.fa-github, .fa-linkedin {
+    color: var(--color-primary);
+    padding: 0 0.75rem 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.fa-github:hover, .fa-linkedin:hover {
+    color: var(--color-accent)
+}
 
 /* FOOTER SECTION */
 
 footer {
-    background-color: var(--color-accent);
+    background-color: var(--color-secondary-light);
     padding: 0.75rem 1rem;
     font-weight: bold;
     text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+/* smaller screen devices */
+
+@media (max-height: 750px) {
+    #scroll-down-button { display: none; }
+}
+
+@media (max-width: 350px) {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 17rem;
+    }
+}
+
+/* medium screen devices */
+
+@media (min-width: 600px) {
+    nav ul { display: flex; }
+
+    nav h1 a { font-size: 1.5rem; }
+
+    nav img { display: none; }
+    
+    header h1 { font-size: 4.5rem; }
+    
+    header p { font-size: 1.75rem; }
+
+    #header-resume-button { transform: scale(1.25); }
+
+    #project-section-title { font-size: 3rem; }
+
+    .project { 
+        width: 60rem;
+    }
 }

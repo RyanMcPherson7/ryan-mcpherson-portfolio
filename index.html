@@ -14,14 +14,18 @@
 </head>
 <body>
 
+    <!-- navigaion -->
+
     <nav>
-        <h1>Ryan McPherson</h1>
+        <h1><a href="index.html">Ryan McPherson</a></h1>
         <ul>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a href="#project-container">Projects</a></li>
+            <li><a href="#contact-container">Contact</a></li>
         </ul>
         <img src="images/toggle-icon.svg" alt="toggle navigation icon">
     </nav>
+
+    <!-- header -->
 
     <header>
         <h1>Hi, I'm <span class="special">Ryan</span></h1>
@@ -43,33 +47,48 @@
     <div id="project-container">
         <h2 id="project-section-title">Projects</h2>
         <div class="project">
-            <div class="project-image"></div>
+            <div class="project-image">
+                <div class="image-cover"></div>
+            </div>
             <h3 class="project-title">Project Title</h3>
+            <p><span class="special">Overview:</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium voluptatem cumque dolorum distinctio iure asperiores deserunt modi quisquam perferendis!</p>
+            <p><span class="special">Features:</span> Responsive design, recursion, object-oriented programming, e-comerse</p>
+            <p>Tools used:</p>
             <div class="project-tool-list">
                 <img src="images/html5-logo.png" alt="">
                 <img src="images/css3-logo.png" alt="">
             </div>
-            <button class="project-details-button">Details</button>
+            <button class="project-details-button"><a href="#">Repository</a></button>
         </div>
 
         <div class="project">
-            <div class="project-image"></div>
+            <div class="project-image">
+                <div class="image-cover"></div>
+            </div>
             <h3 class="project-title">Project Title</h3>
+            <p><span class="special">Overview:</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium voluptatem cumque dolorum distinctio iure asperiores deserunt modi quisquam perferendis!</p>
+            <p><span class="special">Features:</span> Responsive design, recursion, object-oriented programming, e-comerse</p>
+            <p>Tools used:</p>
             <div class="project-tool-list">
                 <img src="images/html5-logo.png" alt="">
                 <img src="images/css3-logo.png" alt="">
             </div>
-            <button class="project-details-button">Details</button>
+            <button class="project-details-button"><a href="#">Repository</a></button>
         </div>
 
         <div class="project">
-            <div class="project-image"></div>
+            <div class="project-image">
+                <div class="image-cover"></div>
+            </div>
             <h3 class="project-title">Project Title</h3>
+            <p><span class="special">Overview:</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis praesentium voluptatem cumque dolorum distinctio iure asperiores deserunt modi quisquam perferendis!</p>
+            <p><span class="special">Features:</span> Responsive design, recursion, object-oriented programming, e-comerse</p>
+            <p>Tools used:</p>
             <div class="project-tool-list">
                 <img src="images/html5-logo.png" alt="">
                 <img src="images/css3-logo.png" alt="">
             </div>
-            <button class="project-details-button">Details</button>
+            <button class="project-details-button"><a href="#">Repository</a></button>
         </div>
 
     </div>
@@ -77,24 +96,12 @@
     <!-- contact -->
     <div id="contact-container">
         <h2 id="contact-section-title">Contact</h2>
-        <p>Like what you see? Let's talk!</p>
+        <p>Like what you see? <span class="special">Let's talk</span>!</p>
         <form>
-            <div>
-                <label for="name-input">Name</label>
-                <input type="text" id="name-input">
-            </div>
-            <div>
-                <label for="email-input">Email</label>
-            <input type="email" id="email-input">
-            </div>
-            <div>
-                <label for="subject-input">Subject</label>
-            <input type="text" id="subject-input">
-            </div>
-            <div>
-                <label for="message-input">Message</label>
-                <textarea id="messasge-iuput" cols="15" rows="6"></textarea>
-            </div>
+            <input type="text" id="name-input" placeholder="Name">
+            <input type="email" id="email-input" placeholder="Email">
+            <input type="text" id="subject-input" placeholder="Subject">
+            <textarea id="messasge-iuput" cols="15" rows="7" placeholder="Message"></textarea>
         </form>
         <div id="contact-links">
             <a href="https://github.com/RyanMcPherson7" target="_blank"><i class="fab fa-github fa-3x"></i></a>
@@ -104,7 +111,7 @@
 
     <!-- footer -->
     <footer>
-        <p>Copyright &copy; 2021 Ryan McPherson, All Rights Reserved</p>
+        <p>Copyright &copy; 2021 Ryan McPherson,<br>All Rights Reserved</p>
     </footer>
     
 </body>
