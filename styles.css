@@ -6,18 +6,14 @@
     --color-secondary-light: #202020;
     --color-secondary-light-light: #6D6D6D;
 
-    --color-accent: #825FE3;
-    --color-accent-dark: #6536e6;
+    /* --color-accent: #825FE3;
+    --color-accent-dark: #6536e6; */
 
     /* --color-accent: SpringGreen;
     --color-accent-dark: #00bd5e; */
 
     --color-accent: rgb(230, 130, 0);
     --color-accent-dark:rgb(255, 177, 74);
-
-    /* --color-primary: #070707;
-    --color-secondary: white; */
-
 }
 
 * {
@@ -129,7 +125,7 @@ nav ul li a:hover {
 #header-bg-container {
     background-image: url(images/header-bg.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     width: 100%;
     height: 95vh;
     position: relative;
