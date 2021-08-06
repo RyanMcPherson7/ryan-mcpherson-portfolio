@@ -224,7 +224,7 @@ header p {
     border-radius: 5rem;
     color: var(--color-secondary);
     z-index: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: background-color 0.3s ease-in-out;
 }
 
