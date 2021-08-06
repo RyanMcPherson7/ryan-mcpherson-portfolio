@@ -113,8 +113,7 @@ nav h1 a {
     transition: color 0.3s ease-in-out;
 }
 
-nav h1 a:hover,
-nav h1 a:focus {
+nav h1 a:hover {
     color: var(--color-accent);
     cursor: pointer;
 }
@@ -377,36 +376,6 @@ textarea {
 textarea {
     resize: none;
 }
-
-/* =========================== */
-
-/* .input {
-    position: relative;
-    overflow: hidden;
-    margin: 0.3rem;
-    border-radius: 0.2rem;
-}
-
-.input::before {
-    content: "";
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 4px;
-    z-index: 100;
-    background-color: var(--color-accent);
-    position: absolute;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.4s ease-in-out;
-}
-
-.input:hover::before,
-.input:focus::before {
-    transform: scaleX(1);
-} */
-
-/* ========================== */
 
 #contact-submit-button {
     margin: 1rem;
