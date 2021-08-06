@@ -213,19 +213,28 @@ header p {
     color: var(--color-primary);
 }
 
-
 /* bottom right resume button */
-#resume-bottom-button .fa-address-book {
-    position: fixed;
+#resume-bottom-button {
     bottom: 20px;
     right: 20px;
+    position: fixed;
+    width: 4.5rem;
+    height: 4.5rem;
     background-color: var(--color-accent);
-    padding: 1rem 1.2rem;
-    border-radius: 5rem;
+    border-radius: 5rem;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    
+}
+
+
+#resume-bottom-button .fa-address-book {
+    font-size: 2.3rem;
     color: var(--color-secondary);
-    z-index: 1;
-    /* overflow: hidden; */
-    transition: background-color 0.3s ease-in-out;
+    padding: 0.5rem;
+    /* transition: background-color 0.3s ease-in-out; */
 }
 
 /* #resume-bottom-button .fa-address-book::before {
@@ -451,9 +460,8 @@ footer p {
 
     #header-resume-button { transform: scale(1.25); }
 
-    .fa-address-book {
+    #resume-bottom-button {
         transform: scale(1.25);
-        padding: 1rem 1.2rem;
         right: 30px;
         bottom: 30px;
     }
