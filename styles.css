@@ -227,6 +227,7 @@ header p {
     justify-content: center;
     z-index: 10000;
     
+    overflow: hidden;
 }
 
 
@@ -234,34 +235,28 @@ header p {
     font-size: 2.3rem;
     color: var(--color-secondary);
     padding: 0.5rem;
-    /* transition: background-color 0.3s ease-in-out; */
 }
 
-/* #resume-bottom-button .fa-address-book::before {
+#resume-bottom-button::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: red;
+    background-color: var(--color-primary);
     z-index: -1;
     border-radius: 50%;
 
-    transform: scale(1.5);
+    transform: scale(0);
 
-    transition: 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 
-#resume-bottom-button .fa-address-book:hover::before,
-#resume-bottom-button .fa-address-book:focus::before {
-    transform: scale(0);
-} */
-
-/* #resume-bottom-button .fa-address-book:hover,
-#resume-bottom-button .fa-address-book:focus {
-    background-color: var(--color-accent-dark);
-} */
+#resume-bottom-button:hover::before,
+#resume-bottom-button:focus::before {
+    transform: scale(1.5);
+}
 
 /* PROJECT SECTION */
 
