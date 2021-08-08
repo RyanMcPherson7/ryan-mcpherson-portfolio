@@ -75,8 +75,8 @@ button:focus::before {
 }
 
 
-/* styling scrollbar */
-body::-webkit-scrollbar {
+/* turn on scrollbar */
+/* body::-webkit-scrollbar {
     width: 0.5rem;
 }
 
@@ -86,6 +86,10 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background-color: var(--color-accent);
+} */
+
+body::-webkit-scrollbar {
+    width: 0;
 }
 
 /* NAVIGATION SECTION */
