@@ -12,10 +12,13 @@
 
     --color-accent: #6C63FF;
     --color-primary: #E2E8F0;
-    /* --color-primary: #E2E8F0;
+
+    --color-accent: #667EEA;
+
+    --color-primary: #E2E8F0;
     --color-secondary: #1A202C;
     --color-secondary-light: #2D3748;
-    --color-secondary-light-light: #E2E8F0; */
+    --color-secondary-light-light: #E2E8F0;
 
     /* --color-accent: rgb(230, 130, 0); */
 }
@@ -386,6 +389,10 @@ textarea {
 
 textarea {
     resize: none;
+}
+
+::-webkit-input-placeholder {
+    color: var(--color-secondary-light-light)
 }
 
 #contact-submit-button {
