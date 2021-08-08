@@ -94,13 +94,14 @@ body::-webkit-scrollbar {
 
 /* NAVIGATION SECTION */
 
+/* backgorund color determined in script.js */
 #nav-container {
-    background-color: var(--color-secondary-light);
     top: 0;
     left: 0;
     z-index: 1000;
     position: fixed;
     width: 100%;
+    transition: background-color 0.5s ease-in-out;
 }
 
 nav {
