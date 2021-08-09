@@ -10,17 +10,12 @@
 
     /* --color-accent: SpringGreen; */
 
-    --color-accent: #6C63FF;
-    --color-primary: #E2E8F0;
-
     --color-accent: #667EEA;
 
     --color-primary: #E2E8F0;
     --color-secondary: #1A202C;
     --color-secondary-light: #2D3748;
-    --color-secondary-light-light: #E2E8F0;
-
-    /* --color-accent: rgb(230, 130, 0); */
+    --color-secondary-light-light: #95a4b3;
 }
 
 * {
@@ -153,8 +148,14 @@ nav ul li a:focus {
 }
 
 /* menu toggle button */
-.fa-angle-double-left {
+nav .fa-angle-double-left {
     padding: 0.6rem 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav .fa-angle-double-left:hover {
+    color: var(--color-accent);
+    cursor: pointer;
 }
 
 /* HEADER SECTION */
