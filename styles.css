@@ -148,12 +148,12 @@ nav ul li a:focus {
 }
 
 /* menu toggle button */
-nav .fa-angle-double-left {
+nav i {
     padding: 0.6rem 1rem;
     transition: color 0.3s ease-in-out;
 }
 
-nav .fa-angle-double-left:hover {
+nav i:hover {
     color: var(--color-accent);
     cursor: pointer;
 }
@@ -219,7 +219,7 @@ header p {
     margin: 0 auto;
 }
 
-.fa-angle-down {
+#scroll-down-button i {
     color: var(--color-primary);
 }
 
@@ -243,7 +243,7 @@ header p {
 }
 
 
-#resume-bottom-button .fa-address-book {
+#resume-bottom-button i {
     font-size: 2.3rem;
     color: var(--color-secondary);
     padding: 0.5rem;
@@ -343,14 +343,14 @@ header p {
     margin: 0 0.2rem;
 }
 
-#project-container .fa-github {
+#project-container i {
     color: var(--color-secondary-light-light);
     margin-bottom: 1rem;
     transition: color 0.3s ease-in-out;
 }
 
-#project-container .fa-github:hover,
-#project-container .fa-github:focus {
+#project-container i:hover,
+#project-container i:focus {
     color: var(--color-accent);
 }
 
@@ -439,18 +439,15 @@ textarea:focus {
     justify-content: center;
 }
 
-#contact-container .fa-github, 
-#contact-container .fa-linkedin {
+#contact-container i {
     color: var(--color-primary);
-    padding: 0 0.75rem 2rem;
+    margin: 0 0.75rem 2rem;
     transition: color 0.3s ease-in-out;
     font-size: 3rem;
 }
 
-#contact-container .fa-github:hover, 
-#contact-container .fa-linkedin:hover,
-#contact-container .fa-github:focus, 
-#contact-container .fa-linkedin:focus {
+#contact-container i:hover, 
+#contact-container i:focus {
     color: var(--color-accent)
 }
 
@@ -490,6 +487,7 @@ footer p {
 
     nav h1 a { font-size: 1.5rem; }
 
+    /* stop displaying the toggle list */
     .fa-angle-double-left { display: none; }
 
     header { padding-top: 5rem; }
@@ -533,8 +531,7 @@ footer p {
         width: 40rem;
     }
 
-    #contact-container .fa-github, 
-    #contact-container .fa-linkedin {
+    #contact-container i {
         font-size: 4rem;
     }
 
