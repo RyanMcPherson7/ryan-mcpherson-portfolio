@@ -160,8 +160,7 @@ nav ul li a:focus {
 /* HEADER SECTION */
 
 #header-bg-container {
-    /* background-image: url(images/header-bg.jpg); */
-    background-image: url(images/alistair-macrobert-4TKFpJPnyU8-unsplash.jpg);
+    background-image: url(images/header-bg.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -225,8 +224,8 @@ header p {
 
 /* bottom right resume button */
 #resume-bottom-button {
-    bottom: 20px;
-    right: 20px;
+    /* bottom: 20px;
+    right: 20px; */
     position: fixed;
     width: 4.5rem;
     height: 4.5rem;
@@ -237,6 +236,9 @@ header p {
     justify-content: center;
     z-index: 10000;
     overflow: hidden;
+
+    bottom: -90px;
+    right: -90px;
 }
 
 
@@ -470,11 +472,7 @@ footer p {
 
     #header-resume-button { transform: scale(1.25); }
 
-    #resume-bottom-button {
-        transform: scale(1.25);
-        right: 30px;
-        bottom: 30px;
-    }
+    #resume-bottom-button { transform: scale(1.25); }
 
     #project-section-title { font-size: 3rem; }
 
