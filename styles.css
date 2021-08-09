@@ -409,10 +409,12 @@ textarea {
     width: 20rem;
     background-color: transparent;
     border: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 textarea {
     resize: none;
+    
 }
 
 input[type="text"]:focus,
