@@ -68,10 +68,7 @@ button::before {
     transition: transform 0.3s ease-in-out;
 }
 
-button:hover::before,
-button:focus::before {
-    transform: scaleX(1);
-}
+
 
 .special {
     color: var(--color-accent)
@@ -121,11 +118,6 @@ nav h1 a {
     transition: color 0.3s ease-in-out;
 }
 
-nav h1 a:hover {
-    color: var(--color-accent);
-    cursor: pointer;
-}
-
 nav ul {
     list-style: none;
     display: none;
@@ -142,20 +134,10 @@ nav ul li a {
     transition: 0.3s ease-in-out;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-    color: var(--color-accent)
-}
-
 /* menu toggle button */
 nav i {
     padding: 0.6rem 1rem;
     transition: color 0.3s ease-in-out;
-}
-
-nav i:hover {
-    color: var(--color-accent);
-    cursor: pointer;
 }
 
 /* HEADER SECTION */
@@ -225,8 +207,6 @@ header p {
 
 /* bottom right resume button */
 #resume-bottom-button {
-    /* bottom: 20px;
-    right: 20px; */
     position: fixed;
     width: 4.5rem;
     height: 4.5rem;
@@ -264,11 +244,6 @@ header p {
     transition: transform 0.4s ease-in-out;
 }
 
-#resume-bottom-button:hover::before,
-#resume-bottom-button:focus::before {
-    transform: scale(1.5);
-}
-
 /* PROJECT SECTION */
 
 #project-container {
@@ -293,11 +268,6 @@ header p {
     max-width: 30rem;
 
     transition: transform 0.2s ease-in-out;
-}
-
-.project:hover,
-.project:focus {
-    transform: scale(1.02);
 }
 
 .project-image {
@@ -349,11 +319,6 @@ header p {
     transition: color 0.3s ease-in-out;
 }
 
-#project-container i:hover,
-#project-container i:focus {
-    color: var(--color-accent);
-}
-
 /* CONTACT SECTION */
 
 #contact-section-title {
@@ -379,7 +344,7 @@ header p {
     background-color: var(--color-secondary-light);
     border-radius: 0.2rem;
     margin: 0.3rem;
-    width: 20rem;
+    width: 80%;
     position: relative;
     overflow: hidden;
 }
@@ -406,7 +371,7 @@ textarea {
     color: var(--color-primary);
     font-weight: bold;
     font-size: 1rem;    
-    width: 20rem;
+    width: 100%;
     background-color: transparent;
     border: none;
     font-family: 'Poppins', sans-serif;
@@ -414,7 +379,6 @@ textarea {
 
 textarea {
     resize: none;
-    
 }
 
 input[type="text"]:focus,
@@ -430,6 +394,7 @@ textarea:focus {
 #contact-submit-button {
     margin: 0.3rem 1rem 1rem;
     width: 20rem;
+    width: 80%;
     font-size: 1.1rem;
     color: var(--color-secondary);
 }
@@ -446,11 +411,6 @@ textarea:focus {
     margin: 0 0.75rem 2rem;
     transition: color 0.3s ease-in-out;
     font-size: 3rem;
-}
-
-#contact-container i:hover, 
-#contact-container i:focus {
-    color: var(--color-accent)
 }
 
 /* FOOTER SECTION */
@@ -485,6 +445,46 @@ footer p {
 /* medium screen devices */
 
 @media (min-width: 700px) {
+
+    /* adding hover effects */
+
+    button:hover::before,
+    button:focus::before {
+        transform: scaleX(1);
+    }
+
+    nav ul li a:hover,
+    nav ul li a:focus {
+        color: var(--color-accent)
+    }
+
+    nav h1 a:hover {
+        color: var(--color-accent);
+        cursor: pointer;
+    }
+
+    #resume-bottom-button:hover::before,
+    #resume-bottom-button:focus::before {
+        transform: scale(1.5);
+    }
+
+    .project:hover,
+    .project:focus {
+        transform: scale(1.02);
+    }
+
+    #project-container i:hover,
+    #project-container i:focus {
+        color: var(--color-accent);
+    }
+
+    #contact-container i:hover, 
+    #contact-container i:focus {
+        color: var(--color-accent)
+    }
+
+    /* end of hover effects */
+
     nav ul { display: flex; }
 
     nav h1 a { font-size: 1.5rem; }
