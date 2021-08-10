@@ -53,3 +53,16 @@ for (let i = 0; i < inputList.length; i++) {
     })
 }
 
+// clicking the submit button sends the user a message 
+const contactSubmitButton = document.querySelector("#contact-submit-button");
+
+contactSubmitButton.addEventListener("click", () => {
+
+    // checking to see if all input has been entered
+    for (let i = 0; i < inputList.length; i++) 
+        if (!inputList[i].value) 
+            return;
+        
+    alert("Your message has been sent!");
+});
+
