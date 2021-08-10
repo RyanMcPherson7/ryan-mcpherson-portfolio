@@ -434,14 +434,6 @@ footer p {
     #scroll-down-button { display: none; }
 }
 
-@media (max-width: 350px) {
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        width: 17rem;
-    }
-}
-
 /* medium screen devices */
 
 @media (min-width: 700px) {
