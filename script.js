@@ -1,9 +1,6 @@
 const navContainer = document.querySelector("#nav-container");
 const resumeBottomButton = document.querySelector("#resume-bottom-button");
 
-const inputList = document.querySelectorAll("input");
-const messageInput = document.querySelector("#message-input");
-
 // scrolling down page events
 window.addEventListener("scroll", () => {
 
@@ -42,6 +39,7 @@ window.addEventListener("scroll", () => {
 
 // focusing and unfocusing on input areas triggers underline effect
 const inputUnderlineList = document.querySelectorAll(".inputUnderlineEffect");
+const inputList = document.querySelectorAll(".form-input");  // targets non-hidden input
 
 // events for text input
 for (let i = 0; i < inputList.length; i++) {
@@ -54,13 +52,4 @@ for (let i = 0; i < inputList.length; i++) {
         inputUnderlineList[i].style.transform = "scaleX(0)";
     })
 }
-
-// events for textarea input
-messageInput.addEventListener("focus", () => {
-    inputUnderlineList[inputList.length].style.transform = "scaleX(1)";
-});
-
-messageInput.addEventListener("blur", () => {
-    inputUnderlineList[inputList.length].style.transform = "scaleX(0)";
-});
 
