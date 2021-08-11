@@ -199,6 +199,17 @@ header p {
     position: absolute;
     bottom: 1vh;
     margin: 0 auto;
+    animation: up-and-down 2.5s ease-in-out infinite;
+}
+
+/* animation to move the scroll down arrow up and down */
+@keyframes up-and-down {
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0);
+    } 
 }
 
 #scroll-down-button i {
@@ -222,7 +233,6 @@ header p {
     bottom: -90px;
     right: -90px;
 }
-
 
 #resume-bottom-button i {
     font-size: 2.3rem;
