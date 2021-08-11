@@ -28,8 +28,11 @@ html {
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-secondary);
     color: var(--color-primary);
-    overflow-x: hidden;
     scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 a {
