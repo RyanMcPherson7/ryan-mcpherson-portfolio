@@ -197,12 +197,14 @@ header p {
 /* scroll down arrow */
 #scroll-down-button {
     position: absolute;
-    bottom: 10vh;
+    bottom: 1vh;
     margin: 0 auto;
 }
 
 #scroll-down-button i {
     color: var(--color-primary);
+    transition: color 0.3s ease-in-out;
+    font-size: 4rem;
 }
 
 /* bottom right resume button */
@@ -217,7 +219,6 @@ header p {
     justify-content: center;
     z-index: 10000;
     overflow: hidden;
-
     bottom: -90px;
     right: -90px;
 }
@@ -455,6 +456,12 @@ footer p {
         cursor: pointer;
     }
 
+    #scroll-down-button i:hover, 
+    #scroll-down-button i:focus {
+        color: var(--color-accent);
+        cursor: pointer;
+    }
+
     #resume-bottom-button:hover::before,
     #resume-bottom-button:focus::before {
         transform: scale(1.5);
@@ -493,6 +500,8 @@ footer p {
     #header-resume-button { transform: scale(1.25); }
 
     #resume-bottom-button { transform: scale(1.25); }
+
+    #scroll-down-button i { font-size: 6rem;}
 
     #project-section-title { font-size: 3rem; }
 
@@ -535,6 +544,10 @@ footer p {
 } 
 
 /* large screen devices */
+
+@media (min-width: 1300px) {
+    header p { font-size: 2.5rem; }
+}
 
 @media (min-width: 1500px) {
 
