@@ -431,7 +431,7 @@ footer p {
 
 /* smaller screen devices */
 
-@media (max-height: 750px) {
+@media (max-height: 700px) {
     #scroll-down-button { display: none; }
 }
 
