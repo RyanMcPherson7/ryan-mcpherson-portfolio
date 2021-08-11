@@ -48,8 +48,7 @@ button {
     overflow: hidden;
 }
 
-button:hover, 
-button:focus {
+button:hover {
     cursor: pointer;
 }
 
@@ -451,13 +450,11 @@ footer p {
 
     /* adding hover effects */
 
-    button:hover::before,
-    button:focus::before {
+    button:hover::before {
         transform: scaleX(1);
     }
 
-    nav ul li a:hover,
-    nav ul li a:focus {
+    nav ul li a:hover {
         color: var(--color-accent)
     }
 
@@ -466,29 +463,24 @@ footer p {
         cursor: pointer;
     }
 
-    #scroll-down-button i:hover, 
-    #scroll-down-button i:focus {
+    #scroll-down-button i:hover {
         color: var(--color-accent);
         cursor: pointer;
     }
 
-    #resume-bottom-button:hover::before,
-    #resume-bottom-button:focus::before {
+    #resume-bottom-button:hover::before {
         transform: scale(1.5);
     }
 
-    .project:hover,
-    .project:focus {
+    .project:hover {
         transform: scale(1.02);
     }
 
-    #project-container i:hover,
-    #project-container i:focus {
+    #project-container i:hover {
         color: var(--color-accent);
     }
 
-    #contact-container i:hover, 
-    #contact-container i:focus {
+    #contact-container i:hover {
         color: var(--color-accent)
     }
 
