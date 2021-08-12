@@ -28,7 +28,6 @@ html {
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-secondary);
     color: var(--color-primary);
-    scroll-behavior: smooth;
 }
 
 body {
