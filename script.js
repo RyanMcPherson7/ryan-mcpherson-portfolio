@@ -66,3 +66,17 @@ contactSubmitButton.addEventListener("click", () => {
     alert("Your message has been sent!");
 });
 
+// when the page is loaded, if not in mobile view, add aos animations
+// const projectSectionTitle = document.querySelector("#project-section-title");
+// const projectList = document.querySelectorAll(".project");
+
+// window.addEventListener("load", () => {
+//     if (window.innerWidth > 700) {
+
+//         projectSectionTitle.setAttribute("data-aos", "fade-right");
+//         // projectSectionTitle.setAttribute("data-aos-duration", "1000");
+//         projectSectionTitle.setAttribute("data-aos-mirror", "false");
+
+
+//     }
+// });
