@@ -1,7 +1,40 @@
+// initial header loading animation
+const pageLoadCover = document.querySelector("#page-load-cover")
+const headerMain = document.querySelector("header h1");
+const headerParagragh = document.querySelector("header p");
+const headerResumeButton = document.querySelector("#header-resume-button");
+const navigation = document.querySelector("nav");
+const scrollDownButton = document.querySelector("#scroll-down-button");
+
+window.addEventListener("load", () => {
+
+    if (window.pageYOffset == 0) {
+
+        pageLoadCover.style.opacity = "1";
+        pageLoadCover.style.animation = "slide-right 1.5s ease-in-out forwards 0.5s";
+
+        headerMain.style.opacity = "0";
+        headerMain.style.animation = "fade 1s ease-in-out forwards 2s";
+
+        headerParagragh.style.opacity = "0";
+        headerParagragh.style.animation = "fade 1s ease-in-out forwards 3s";
+
+        headerResumeButton.style.opacity = "0";
+        headerResumeButton.style.animation = "fade 1s ease-in-out forwards 4s";
+
+        navigation.style.opacity = "0";
+        navigation.style.animation = "fade 1s ease-in-out forwards 5s";
+
+        scrollDownButton.style.opacity = "0";
+        scrollDownButton.style.animation = "up-and-down 2.5s ease-in-out infinite, fade 1s ease-in-out forwards 5s";
+    }
+});
+
+
+// scrolling down page events
 const navContainer = document.querySelector("#nav-container");
 const resumeBottomButton = document.querySelector("#resume-bottom-button");
 
-// scrolling down page events
 window.addEventListener("scroll", () => {
 
     // check if not at top of page to convert nav background from transparent to solid

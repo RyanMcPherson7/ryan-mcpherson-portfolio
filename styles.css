@@ -103,7 +103,8 @@ body::-webkit-scrollbar {
     left: 0;
     right: 0;
     z-index: 10000000000000000000;
-    animation: slide-right 1.5s ease-in-out forwards 0.5s;
+
+    opacity: 0;
 }
 
 @keyframes slide-right {
@@ -130,8 +131,6 @@ nav {
     justify-items: center;
     align-items: center;
 
-    opacity: 0;
-    animation: fade 1s ease-in-out forwards 5s;
 }
 
 nav h1 a {
@@ -202,18 +201,12 @@ header h1 {
     font-size: 3rem;
     margin: 7vh 0;
     font-weight: bold;
-
-    opacity: 0;
-    animation: fade 1s ease-in-out forwards 2s;
 }
 
 header p {
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 10vh;
-
-    opacity: 0;
-    animation: fade 1s ease-in-out forwards 3s;
 }
 
 #header-resume-button {
@@ -223,9 +216,6 @@ header p {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--color-secondary);
-
-    opacity: 0;
-    animation: fade 1s ease-in-out forwards 4s;
 }
 
 /* scroll down arrow */
@@ -234,9 +224,7 @@ header p {
     bottom: 1vh;
     margin: 0 auto;
 
-    opacity: 0;
-    animation: up-and-down 2.5s ease-in-out infinite, 
-               fade 1s ease-in-out forwards 5s;
+    animation: up-and-down 2.5s ease-in-out infinite;
 }
 
 /* animation to move the scroll down arrow up and down */
