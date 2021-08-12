@@ -115,7 +115,7 @@ nav {
 }
 
 nav h1 a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 1rem;
     color: var(--color-primary);
     transition: color 0.3s ease-in-out;
@@ -139,8 +139,10 @@ nav ul li a {
 
 /* menu toggle button */
 nav i {
-    padding: 0.6rem 1rem;
+    padding: 0.8rem 1rem 0.8rem 0;
     transition: color 0.3s ease-in-out;
+    font-size: 2rem;
+    color: var(--color-primary);
 }
 
 /* HEADER SECTION */
@@ -444,7 +446,7 @@ footer p {
 
 /* smaller screen devices */
 
-@media (max-height: 700px) {
+@media (max-height: 600px) {
     #scroll-down-button { display: none; }
 }
 
@@ -495,7 +497,7 @@ footer p {
     nav h1 a { font-size: 1.5rem; }
 
     /* stop displaying the toggle list */
-    .fa-angle-double-left { display: none; }
+    #mobile-link-icons { display: none; }
 
     header { padding-top: 5rem; }
 
