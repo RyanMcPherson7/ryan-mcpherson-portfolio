@@ -8,7 +8,7 @@ const scrollDownButton = document.querySelector("#scroll-down-button");
 
 window.addEventListener("load", () => {
 
-    if (window.pageYOffset == 0) {
+    if (window.pageYOffset === 0) {
 
         pageLoadCover.style.opacity = "1";
         pageLoadCover.style.animation = "slide-right 1.5s ease-in-out forwards 0.5s";
