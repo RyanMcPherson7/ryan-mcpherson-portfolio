@@ -6,6 +6,15 @@
     --color-secondary: #1A202C;
     --color-secondary-light: #2D3748;
     --color-secondary-light-light: #95a4b3;
+    --header-img: url(images/header-bg.jpg);
+
+    --header-img: url(images/luca-bravo-zAjdgNXsMeg-unsplash.jpg);
+    --color-accent: #66d6ea;
+    --color-accent: #eadd66;
+    --color-primary: #E2E8F0;
+    --color-secondary: #101218;
+    --color-secondary-light: #22262c;
+    --color-secondary-light-light: #6f747c;
 }
 
 * {
@@ -156,7 +165,7 @@ nav i {
 /* HEADER SECTION */
 
 #header-bg-container {
-    background-image: url(images/header-bg.jpg);
+    background-image: var(--header-img);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -169,7 +178,7 @@ nav i {
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.65;
+    opacity: 0.75;
     z-index: 1;
     position: absolute;
 }
