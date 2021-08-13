@@ -8,6 +8,7 @@ const scrollDownButton = document.querySelector("#scroll-down-button");
 
 window.addEventListener("load", () => {
 
+    // this event triggers on mobile no matter what I do...
     if (window.pageYOffset === 0) {
 
         pageLoadCover.style.opacity = "1";
