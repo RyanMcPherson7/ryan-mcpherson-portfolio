@@ -8,12 +8,12 @@
     --color-secondary-light-light: #95a4b3;
     --header-img: url(images/header-bg.jpg);
 
-    --color-accent: #66d6ea;
+    /* --color-accent: #66d6ea; */
     --color-accent: #eadd66;
     --color-primary: #E2E8F0;
     --color-secondary: #101218;
     --color-secondary-light: #22262c;
-    --color-secondary-light-light: #6f747c;
+    --color-secondary-light-light: #8e95a0;
 }
 
 * {
