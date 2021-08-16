@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
 
         pageLoadNameCover.style.transformOrigin = "right";
         pageLoadNameCover.style.animation = "shrink-right 1s ease-in-out forwards";
-    }, 1300);
+    }, 1400);
 
     // this event triggers on mobile no matter what I do...
     // only animate header section if at top of page
