@@ -11,29 +11,19 @@ const scrollDownButton = document.querySelector("#scroll-down-button");
 
 window.addEventListener("load", () => {
 
-    if (window.innerWidth >= 1500) {
-        pageLoadName.style.color = "blue";
-    }
-    else if (window.innerWidth >= 700) {
-        pageLoadName.style.color = "green";
-    }
-    else {
-        pageLoadName.style.color = "red";
-    }
-
     // animating cover section (occurs every load)
     pageLoadCover.style.display = "flex";
-    pageLoadCover.style.animation = "slide-right 1.5s ease-in-out forwards 2.8s";
+    pageLoadCover.style.animation = "slide-right 1.5s ease-in-out forwards 2.2s";
     
     pageLoadNameCover.style.transformOrigin = "left";
-    pageLoadNameCover.style.animation = "grow-right 1s ease-in-out forwards 0.3s";
+    pageLoadNameCover.style.animation = "grow-right 0.8s ease-in-out forwards 0.3s";
 
     setTimeout(() => {
         pageLoadName.style.color = "var(--color-primary)";
 
         pageLoadNameCover.style.transformOrigin = "right";
-        pageLoadNameCover.style.animation = "shrink-right 1s ease-in-out forwards";
-    }, 1500);
+        pageLoadNameCover.style.animation = "shrink-right 0.8s ease-in-out forwards";
+    }, 1100);
 
     // this event triggers on mobile no matter what I do...
     // only animate header section if at top of page
@@ -41,19 +31,19 @@ window.addEventListener("load", () => {
 
         // animating header section
         headerMain.style.opacity = "0";
-        headerMain.style.animation = "fade 1s ease-in-out forwards 3.5s";
+        headerMain.style.animation = "fade 1s ease-in-out forwards 3s";
 
         headerParagragh.style.opacity = "0";
-        headerParagragh.style.animation = "fade 1s ease-in-out forwards 4.5s";
+        headerParagragh.style.animation = "fade 1s ease-in-out forwards 4s";
 
         headerResumeButton.style.opacity = "0";
-        headerResumeButton.style.animation = "fade 1s ease-in-out forwards 5.5s";
+        headerResumeButton.style.animation = "fade 1s ease-in-out forwards 5s";
 
         navigation.style.opacity = "0";
-        navigation.style.animation = "fade 1s ease-in-out forwards 6.5s";
+        navigation.style.animation = "fade 1s ease-in-out forwards 6s";
 
         scrollDownButton.style.opacity = "0";
-        scrollDownButton.style.animation = "up-and-down 2.5s ease-in-out infinite, fade 1s ease-in-out forwards 6.5s";
+        scrollDownButton.style.animation = "up-and-down 2.5s ease-in-out infinite, fade 1s ease-in-out forwards 6s";
     }
 });
 
