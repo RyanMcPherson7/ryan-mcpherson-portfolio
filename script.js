@@ -15,34 +15,34 @@ window.addEventListener("load", () => {
     if (window.pageYOffset === 0) {
 
         pageLoadCover.style.display = "flex";
-        pageLoadCover.style.animation = "slide-right 1.5s ease-in-out forwards 2.2s";
+        pageLoadCover.style.animation = "slide-right 1.5s ease-in-out forwards 2.5s";
 
         // ======================================
         pageLoadNameCover.style.transformOrigin = "left";
-        pageLoadNameCover.style.animation = "grow-right 1s ease-in-out forwards";
+        pageLoadNameCover.style.animation = "grow-right 1s ease-in-out forwards 0.3s";
 
         setTimeout(() => {
             pageLoadName.style.color = "var(--color-primary)";
 
             pageLoadNameCover.style.transformOrigin = "right";
             pageLoadNameCover.style.animation = "shrink-right 1s ease-in-out forwards";
-        }, 1000);
+        }, 1300);
         // ======================================
 
         headerMain.style.opacity = "0";
-        headerMain.style.animation = "fade 1s ease-in-out forwards 3s";
+        headerMain.style.animation = "fade 1s ease-in-out forwards 3.5s";
 
         headerParagragh.style.opacity = "0";
-        headerParagragh.style.animation = "fade 1s ease-in-out forwards 4s";
+        headerParagragh.style.animation = "fade 1s ease-in-out forwards 4.5s";
 
         headerResumeButton.style.opacity = "0";
-        headerResumeButton.style.animation = "fade 1s ease-in-out forwards 5s";
+        headerResumeButton.style.animation = "fade 1s ease-in-out forwards 5.5s";
 
         navigation.style.opacity = "0";
-        navigation.style.animation = "fade 1s ease-in-out forwards 6s";
+        navigation.style.animation = "fade 1s ease-in-out forwards 6.5s";
 
         scrollDownButton.style.opacity = "0";
-        scrollDownButton.style.animation = "up-and-down 2.5s ease-in-out infinite, fade 1s ease-in-out forwards 6s";
+        scrollDownButton.style.animation = "up-and-down 2.5s ease-in-out infinite, fade 1s ease-in-out forwards 6.5s";
     }
 });
 
