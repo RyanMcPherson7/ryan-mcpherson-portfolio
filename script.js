@@ -1,23 +1,23 @@
 // initial header loading animation
 const pageLoadCover = document.querySelector("#page-load-cover")
+const pageLoadName = document.querySelector("#page-load-name");
+const pageLoadNameCover = document.querySelector("#page-load-name-cover");
+
 const headerMain = document.querySelector("header h1");
 const headerParagragh = document.querySelector("header p");
 const headerResumeButton = document.querySelector("#header-resume-button");
 const navigation = document.querySelector("nav");
 const scrollDownButton = document.querySelector("#scroll-down-button");
 
-const pageLoadName = document.querySelector("#page-load-name");
-const pageLoadNameCover = document.querySelector("#page-load-name-cover");
-
 window.addEventListener("load", () => {
 
     // this event triggers on mobile no matter what I do...
     if (window.pageYOffset === 0) {
 
+        // animating cover section
         pageLoadCover.style.display = "flex";
         pageLoadCover.style.animation = "slide-right 1.5s ease-in-out forwards 2.5s";
-
-        // ======================================
+        
         pageLoadNameCover.style.transformOrigin = "left";
         pageLoadNameCover.style.animation = "grow-right 1s ease-in-out forwards 0.3s";
 
@@ -27,8 +27,8 @@ window.addEventListener("load", () => {
             pageLoadNameCover.style.transformOrigin = "right";
             pageLoadNameCover.style.animation = "shrink-right 1s ease-in-out forwards";
         }, 1300);
-        // ======================================
-
+        
+        // animating header section
         headerMain.style.opacity = "0";
         headerMain.style.animation = "fade 1s ease-in-out forwards 3.5s";
 
