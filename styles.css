@@ -95,7 +95,7 @@ body::-webkit-scrollbar {
 /* PAGE LOADING ANIMATION COVER */
 #page-load-cover {
     background-color: var(--color-secondary);
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
