@@ -11,6 +11,16 @@ const scrollDownButton = document.querySelector("#scroll-down-button");
 
 window.addEventListener("load", () => {
 
+    if (window.innerWidth >= 1500) {
+        pageLoadName.style.color = "blue";
+    }
+    else if (window.innerWidth >= 700) {
+        pageLoadName.style.color = "green";
+    }
+    else {
+        pageLoadName.style.color = "red";
+    }
+
     // animating cover section (occurs every load)
     pageLoadCover.style.display = "flex";
     pageLoadCover.style.animation = "slide-right 1.5s ease-in-out forwards 2.8s";
