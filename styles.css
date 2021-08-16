@@ -101,13 +101,54 @@ body::-webkit-scrollbar {
     left: 0;
     right: 0;
     z-index: 10000000000000000000;
+    justify-content: center;
+    align-items: center;
 
     display: none;
 }
 
 @keyframes slide-right {
     100% {
-        transform: translateY(-100%);
+        transform: translateX(100%);
+    }
+}
+
+#page-load-content {
+    position: relative;
+    padding: 0.5rem 1rem;
+}
+
+#page-load-name {
+    font-size: 2rem;
+    position: relative;
+    color: transparent;
+}
+
+#page-load-name-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-primary);
+    transform: scaleX(0);
+}
+
+@keyframes grow-right {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes shrink-right {
+    0% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
     }
 }
 
@@ -515,8 +556,9 @@ footer p {
     #contact-container i:hover {
         color: var(--color-accent)
     }
-
     /* end of hover effects */
+
+    #page-load-name { font-size: 3rem; }
 
     nav ul { display: flex; }
 
@@ -584,6 +626,8 @@ footer p {
 }
 
 @media (min-width: 1500px) {
+
+    #page-load-name { font-size: 4rem; }
 
     nav,
     header, 
