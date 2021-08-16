@@ -132,6 +132,7 @@ body::-webkit-scrollbar {
     right: 0;
     background-color: var(--color-primary);
     transform: scaleX(0);
+    z-index: 1;
 }
 
 @keyframes grow-right {
