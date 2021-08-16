@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
 
     // animating cover section (occurs every load)
     pageLoadCover.style.display = "flex";
-    pageLoadCover.style.animation = "slide-right 1.5s ease-in-out forwards 2.5s";
+    pageLoadCover.style.animation = "slide-right 1.5s ease-in-out forwards 2.8s";
     
     pageLoadNameCover.style.transformOrigin = "left";
     pageLoadNameCover.style.animation = "grow-right 1s ease-in-out forwards 0.3s";
@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
 
         pageLoadNameCover.style.transformOrigin = "right";
         pageLoadNameCover.style.animation = "shrink-right 1s ease-in-out forwards";
-    }, 1400);
+    }, 1500);
 
     // this event triggers on mobile no matter what I do...
     // only animate header section if at top of page
