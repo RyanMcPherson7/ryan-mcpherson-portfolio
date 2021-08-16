@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
     // this event triggers on mobile no matter what I do...
     if (window.pageYOffset === 0) {
 
-        pageLoadCover.style.opacity = "1";
+        pageLoadCover.style.display = "flex";
         pageLoadCover.style.animation = "slide-right 1.5s ease-in-out forwards 0.5s";
 
         headerMain.style.opacity = "0";

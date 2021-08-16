@@ -102,7 +102,7 @@ body::-webkit-scrollbar {
     right: 0;
     z-index: 10000000000000000000;
 
-    opacity: 0;
+    display: none;
 }
 
 @keyframes slide-right {
