@@ -130,25 +130,3 @@ $(document).ready(function() {
       }, 1500 );
     });
 });
-
-
-const url = "https://ufl.instructure.com/api/v1/courses/433051/assignments"; // API URL
-const token = "1016~63QVzBih7WEd7SuBpJoL3xlf2wk4I2A88Ba1NYq1VBfa45g6U9OnYdYj0YAoum71"; // API Token
-
-let xhr = new XMLHttpRequest();
-
-xhr.open('GET', url, true);
-
-xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
-xhr.setRequestHeader("Access-Control-Allow-Headers", "append,delete,entries,foreach,get,has,keys,set,values,Authorization");
-xhr.setRequestHeader("Access-Control-Allow-Methods", "DELETE, POST, GET, OPTIONS");
-xhr.setRequestHeader('Authorization', `Bearer ${token}`);
-
-xhr.onload = function() {
-    if (this.status == 200) {
-        let data = JSON.parse(this.responseText);
-        console.log(data);
-    }
-}
-
-xhr.send();
