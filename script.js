@@ -130,3 +130,26 @@ $(document).ready(function() {
       }, 1500 );
     });
 });
+
+// =======================================================================
+
+const urlTest = 'https://dog.ceo/api/breeds/image/random';
+
+const url = "https://ufl.instructure.com/api/v1/courses/433051/assignments"; // API URL
+const token = "1016~63QVzBih7WEd7SuBpJoL3xlf2wk4I2A88Ba1NYq1VBfa45g6U9OnYdYj0YAoum71"; // API Token
+const method = "GET"; // Request method, change for what's needed
+
+let req = new Request(url, {
+    method: method,
+    headers: { "Authorization": `Bearer ${token}` },
+    mode: 'no-cors'
+});
+
+
+fetch(req)
+.then(res => {
+    if (!res.ok) throw new Error('not working lol');
+    return res.json();
+})
+.then(data => console.log(data))
+.catch(error => console.log('ERROR', error.message)); // Do better handling here
