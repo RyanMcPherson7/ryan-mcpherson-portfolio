@@ -130,3 +130,22 @@ $(document).ready(function() {
       }, 1500 );
     });
 });
+
+
+let xhr = new XMLHttpRequest();
+
+xhr.open('GET', urlTest, true);
+
+xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+xhr.setRequestHeader("Access-Control-Allow-Headers", "append,delete,entries,foreach,get,has,keys,set,values,Authorization");
+xhr.setRequestHeader("Access-Control-Allow-Methods", "DELETE, POST, GET, OPTIONS");
+xhr.setRequestHeader('Authorization', `Bearer ${token}`);
+
+xhr.onload = function() {
+    if (this.status == 200) {
+        let data = JSON.parse(this.responseText);
+        console.log(data);
+    }
+}
+
+xhr.send();
