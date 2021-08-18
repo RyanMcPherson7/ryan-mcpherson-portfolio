@@ -14,6 +14,8 @@
     --color-secondary: #101218;
     --color-secondary-light: #22262c;
     --color-secondary-light-light: #8e95a0;
+
+    --color-accent: #00FA9A;
 }
 
 * {
@@ -340,7 +342,7 @@ header p {
 
 #project-section-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 5rem 0 2rem;
 }
 
@@ -413,7 +415,7 @@ header p {
 
 #contact-section-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
     padding-top: 6rem;
 }
@@ -421,7 +423,8 @@ header p {
 #contact-container p {
     text-align: center;
     font-weight: bold;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 #contact-container form {
@@ -582,7 +585,7 @@ footer p {
 
     #scroll-down-button i { font-size: 6rem;}
 
-    #project-section-title { font-size: 3rem; }
+    #project-section-title, #contact-section-title { font-size: 3.5rem; }
 
     .project { max-width: 40rem; }
 
@@ -593,8 +596,6 @@ footer p {
     .project-tool-list img { width: 2rem; height: 2rem; }
 
     .project-details-button { transform: scale(1.25); margin-bottom: 1.7rem; }
-
-    #contact-section-title { font-size: 4rem; }
 
     #contact-container p { font-size: 1.5rem; }
 
