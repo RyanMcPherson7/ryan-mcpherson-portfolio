@@ -70,8 +70,6 @@ button::before {
     transition: transform 0.3s ease-in-out;
 }
 
-
-
 .special {
     color: var(--color-accent)
 }
@@ -132,7 +130,7 @@ body::-webkit-scrollbar {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
     transform: scaleX(0);
     z-index: 1;
 }
