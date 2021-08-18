@@ -141,3 +141,5 @@ fetch(uriMegaTest)
 .then(data => {
     console.log(data)
 });
+
+console.log("test is running");
