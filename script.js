@@ -130,16 +130,3 @@ $(document).ready(function() {
       }, 1500 );
     });
 });
-
-
-
-// =======================================
-const uriMegaTest = 'https://ufl.instructure.com/api/v1/courses/433051/assignments?access_token=1016~uaDesK4L7mzgaYdDxdhVqR7iutudVmVX5SCyKVz2vCvrNQ6bHrn79IwPkMMT8LJb';
-
-fetch(uriMegaTest)
-.then(response => response.json())
-.then(data => {
-    console.log(data)
-});
-
-console.log("test is running");
