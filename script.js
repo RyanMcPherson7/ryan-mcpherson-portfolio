@@ -137,7 +137,7 @@ const token = "1016~63QVzBih7WEd7SuBpJoL3xlf2wk4I2A88Ba1NYq1VBfa45g6U9OnYdYj0YAo
 
 let xhr = new XMLHttpRequest();
 
-xhr.open('GET', urlTest, true);
+xhr.open('GET', url, true);
 
 xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 xhr.setRequestHeader("Access-Control-Allow-Headers", "append,delete,entries,foreach,get,has,keys,set,values,Authorization");
