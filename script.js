@@ -1,3 +1,15 @@
+// randomly determine header background image and color combination
+const colorBG = [["#00FA9A", "header-bg1.jpg"],  // light green
+                 ["#eadd66", "header-bg2.jpg"],  // yellow
+                 ["#66d6ea", "header-bg3.jpg"],  // light blue
+                 ["#ff9956", "header-bg4.jpg"]]; // light orange
+
+const randomIndex = Math.floor(Math.random() * colorBG.length);
+
+document.documentElement.style.setProperty("--color-accent", colorBG[randomIndex][0]);
+document.documentElement.style.setProperty("--header-img", "url(images/" + colorBG[randomIndex][1] + ")");
+
+
 // initial header loading animation
 const pageLoadCover = document.querySelector("#page-load-cover")
 const pageLoadName = document.querySelector("#page-load-name");
