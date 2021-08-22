@@ -103,8 +103,6 @@ body::-webkit-scrollbar {
     z-index: 10000000000000000000;
     justify-content: center;
     align-items: center;
-
-    display: none;
 }
 
 @keyframes slide-right {
