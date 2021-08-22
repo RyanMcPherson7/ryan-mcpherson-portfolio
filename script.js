@@ -12,7 +12,7 @@ const scrollDownButton = document.querySelector("#scroll-down-button");
 window.addEventListener("load", () => {
 
     // animating cover section (occurs every load)
-    pageLoadCover.style.animation = "slide-right 1.2s ease-in-out forwards 2s";
+    // pageLoadCover.style.animation = "slide-right 1.2s ease-in-out forwards 2s";
     
     pageLoadNameCover.style.transformOrigin = "left";
     pageLoadNameCover.style.animation = "grow-right 0.8s ease-in-out forwards 0.3s";

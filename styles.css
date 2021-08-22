@@ -33,6 +33,10 @@ html {
 body {
     overflow-x: hidden;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 a {
@@ -96,17 +100,20 @@ body::-webkit-scrollbar {
 #page-load-cover {
     background-color: var(--color-secondary);
     position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: 150vw;
+    height: 100vh;
     z-index: 10000000000000000000;
     justify-content: center;
     align-items: center;
     display: flex;
+
+    animation: slide-right 1.7s ease-in-out forwards 1.9s;
 }
 
 @keyframes slide-right {
+    25% {
+        transform: translateX(-3%);
+    }
     100% {
         transform: translateX(100%);
     }
@@ -428,6 +435,7 @@ header p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
 }
 
 .input {
@@ -510,6 +518,7 @@ footer {
     padding: 0.75rem 1rem;
     font-weight: bold;
     text-align: center;
+    width: 100%;
 }
 
 footer p {
