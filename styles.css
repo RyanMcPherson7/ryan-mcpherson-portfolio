@@ -6,17 +6,13 @@
     --color-secondary: #1A202C;
     --color-secondary-light: #2D3748;
     --color-secondary-light-light: #95a4b3;
-    --header-img: url(images/header-bg5.jpg);
+    --header-img: url(images/header-bg1.jpg);
 
     --color-primary: #E2E8F0;
     --color-secondary: #101218;
     --color-secondary-light: #22262c;
     --color-secondary-light-light: #8e95a0;
     --color-accent: #00FA9A;
-
-    --color-accent: #ff9956;
-
-
 }
 
 * {
