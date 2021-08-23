@@ -263,7 +263,7 @@ header p {
 /* scroll down arrow */
 #scroll-down-button {
     position: absolute;
-    bottom: 1vh;
+    bottom: 9vh;
     margin: 0 auto;
 
     animation: up-and-down 2.5s ease-in-out infinite;
@@ -585,6 +585,8 @@ footer p {
     #header-resume-button { transform: scale(1.25); }
 
     #resume-bottom-button { transform: scale(1.25); }
+
+    #scroll-down-button { bottom: 1vh; }
 
     #scroll-down-button i { font-size: 6rem;}
 
