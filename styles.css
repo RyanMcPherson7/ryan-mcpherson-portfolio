@@ -263,7 +263,7 @@ header p {
 /* scroll down arrow */
 #scroll-down-button {
     position: absolute;
-    bottom: 9vh;
+    bottom: 12vh;
     margin: 0 auto;
 
     animation: up-and-down 2.5s ease-in-out infinite;
