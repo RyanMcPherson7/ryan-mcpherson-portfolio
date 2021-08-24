@@ -25,8 +25,6 @@ const scrollDownButton = document.querySelector("#scroll-down-button");
 window.addEventListener("load", () => {
 
     // animating cover section (occurs every load)
-    // pageLoadCover.style.animation = "slide-right 1.2s ease-in-out forwards 2s";
-    
     pageLoadNameCover.style.transformOrigin = "left";
     pageLoadNameCover.style.animation = "grow-right 0.8s ease-in-out forwards 0.3s";
 
@@ -37,9 +35,8 @@ window.addEventListener("load", () => {
         pageLoadNameCover.style.animation = "shrink-right 0.8s ease-in-out forwards";
     }, 1100);
 
-    // this event triggers on mobile no matter what I do...
-    // only animate header section if at top of page
-    if (window.pageYOffset === 0) {
+    // only animate header section if at top of page and in desktop mode
+    if (window.pageYOffset === 0 && window.innerWidth > 700) {
 
         // animating header section
         headerMain.style.opacity = "0";
