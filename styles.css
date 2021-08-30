@@ -350,12 +350,20 @@ header p {
 }
 
 /* individual project images */
-#minesweeper-project .project-image {
-    background-image: url(images/Minesweeper.png);
+#assignments-but-automated-project .project-image {
+    background-image: url(images/assignments-but-automated.PNG);
 }
 
 #portfolio-project .project-image {
     background-image: url(images/Portfolio.PNG);
+}
+
+#minesweeper-project .project-image {
+    background-image: url(images/Minesweeper.png);
+}
+
+#image-manipulator-project .project-image {
+    background-image: url(images/assignments-but-automated.PNG);
 }
 
 .project-image {
@@ -625,6 +633,7 @@ footer p {
 /* large screen devices */
 
 @media (min-width: 1300px) {
+    header h1 { font-size: 5.5rem; }
     header p { font-size: 2.5rem; }
 }
 
