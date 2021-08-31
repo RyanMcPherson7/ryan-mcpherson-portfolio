@@ -152,7 +152,7 @@ body::-webkit-scrollbar {
 
 /* NAVIGATION SECTION */
 
-/* backgorund color determined in script.js */
+/* background color determined in script.js */
 #nav-container {
     top: 0;
     left: 0;
@@ -355,11 +355,11 @@ header p {
 }
 
 #portfolio-project .project-image {
-    background-image: url(images/Portfolio.PNG);
+    background-image: url(images/portfolio.PNG);
 }
 
 #minesweeper-project .project-image {
-    background-image: url(images/Minesweeper.png);
+    background-image: url(images/minesweeper.png);
 }
 
 #image-manipulator-project .project-image {
@@ -368,9 +368,10 @@ header p {
 
 .project-image {
     width: 100%;
-    height: 15rem;
+    height: 12rem;
     border-radius: 2rem 2rem 0 0;
     background-position: center;
+    background-size: cover;
 }
 
 /* used to darken the project image */
@@ -391,7 +392,7 @@ header p {
 .project p {
     font-weight: bold;
     text-align: left;
-    padding: 0 1rem 1rem;
+    padding: 0 1.75rem 1rem;
     font-size: 0.9rem;
     line-height: 1.6rem;
     color: var(--color-secondary-light-light);
@@ -595,6 +596,8 @@ footer p {
     #project-section-title, #contact-section-title { font-size: 3.5rem; }
 
     .project { max-width: 40rem; }
+
+    .project-image { height: 15rem; }
 
     .project-title { font-size: 2rem; }
 
