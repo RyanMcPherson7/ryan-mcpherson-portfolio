@@ -351,15 +351,15 @@ header p {
 
 /* individual project images */
 #assignments-but-automated-project .project-image {
-    background-image: url(images/assignments-but-automated.PNG);
+    background-image: url(images/assignments-but-automated.png);
 }
 
 #portfolio-project .project-image {
-    background-image: url(images/Portfolio.PNG);
+    background-image: url(images/portfolio.png);
 }
 
 #minesweeper-project .project-image {
-    background-image: url(images/Minesweeper.PNG);
+    background-image: url(images/minesweeper.png);
 }
 
 #image-manipulator-project .project-image {
