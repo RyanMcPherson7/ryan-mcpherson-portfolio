@@ -442,7 +442,7 @@ header p {
     background-color: var(--color-secondary-light);
     border-radius: 0.2rem;
     margin: 0.3rem;
-    width: 80%;
+    width: 85%;
     position: relative;
     overflow: hidden;
 }
@@ -492,7 +492,7 @@ textarea:focus {
 #contact-submit-button {
     margin: 0.3rem 1rem 1rem;
     width: 20rem;
-    width: 80%;
+    width: 85%;
     font-size: 1.1rem;
     color: var(--color-secondary);
 }
