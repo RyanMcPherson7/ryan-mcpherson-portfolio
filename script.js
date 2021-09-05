@@ -8,7 +8,7 @@ const colorBG = [["#00FA9A", "header-bg1.jpg"],  // light green
 const randomIndex = Math.floor(Math.random() * colorBG.length);
 
 document.documentElement.style.setProperty("--color-accent", colorBG[randomIndex][0]);
-document.documentElement.style.setProperty("--header-img", "url(images/" + colorBG[randomIndex][1] + ")");
+document.documentElement.style.setProperty("--header-img", `url(images/${colorBG[randomIndex][1]})`);
 
 
 // initial header loading animation
