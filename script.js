@@ -1,9 +1,7 @@
 // randomly determine header background image and color combination
-const colorBG = [["#00FA9A", "header-bg1.jpg"],  // light green
-                 ["#eadd66", "header-bg2.jpg"],  // yellow
-                 ["#66d6ea", "header-bg3.jpg"],  // light blue
-                 ["#ff9956", "header-bg4.jpg"],  // light orange
-                 ["#bd8aff", "header-bg5.jpg"]]; // light purple
+const colorBG = [["#00FA9A", "header-bg-green.jpg"],  // light green
+                 ["#eadd66", "header-bg-yellow.jpg"],  // yellow
+                 ["#66d6ea", "header-bg-blue.jpg"]]  // light blue
 
 const randomIndex = Math.floor(Math.random() * colorBG.length);
 
