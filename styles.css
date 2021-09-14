@@ -579,6 +579,9 @@ footer p {
     /* stop displaying the toggle list */
     #mobile-link-icons { display: none; }
 
+    /* parallax effect for desktop view */
+    #header-bg-container { background-attachment: fixed; }
+
     header { padding-top: 5rem; }
 
     header h1 { font-size: 4.5rem; }
