@@ -352,19 +352,19 @@ header p {
 
 /* individual project images */
 #assignments-but-automated-project .project-image {
-    background-image: url(images/assignments-but-automated.PNG);
+    background-image: url(images/project-images/assignments-but-automated.PNG);
 }
 
 #portfolio-project .project-image {
-    background-image: url(images/Portfolio.PNG);
+    background-image: url(images/project-images/Portfolio.PNG);
 }
 
 #minesweeper-project .project-image {
-    background-image: url(images/Minesweeper.png);
+    background-image: url(images/project-images/Minesweeper.png);
 }
 
 #image-manipulator-project .project-image {
-    background-image: url(images/image-manipulator.png);
+    background-image: url(images/project-images/image-manipulator.png);
 }
 
 .project-image {
