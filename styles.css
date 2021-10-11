@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-    --header-img: url(images/header-bg1.jpg);
+    --header-img: url(images/header-images/bg7.jpg);
+    
     --color-primary: #E2E8F0;
     --color-secondary: #101218;
     --color-secondary-light: #22262c;
     --color-secondary-light-light: #A7B1C3;
-    --color-accent: #00FA9A;
+    --color-accent: #5bfdba;
 }
 
 * {
@@ -216,7 +217,7 @@ nav i {
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.75;
+    opacity: 0.70;
     z-index: 1;
     position: absolute;
 }

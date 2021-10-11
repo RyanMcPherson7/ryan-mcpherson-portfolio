@@ -1,12 +1,16 @@
 // randomly determine header background image and color combination
-const colorBG = [["#00FA9A", "header-bg-green.jpg"],  // light green
-                 ["#eadd66", "header-bg-yellow.jpg"],  // yellow
-                 ["#66d6ea", "header-bg-blue.jpg"]]  // light blue
+const colorBG = [["#c884ff", "bg1.jpg"],  
+                 ["#33e0ff", "bg2.jpg"],  
+                 ["#67ffa6", "bg3.jpg"],
+                 ["#ff91c8", "bg4.jpg"],
+                 ["#c884ff", "bg5.jpg"],
+                 ["#ffe862", "bg6.jpg"],
+                 ["#5bfdba", "bg7.jpg"]]  
 
 const randomIndex = Math.floor(Math.random() * colorBG.length);
 
 document.documentElement.style.setProperty("--color-accent", colorBG[randomIndex][0]);
-document.documentElement.style.setProperty("--header-img", `url(images/${colorBG[randomIndex][1]})`);
+document.documentElement.style.setProperty("--header-img", `url(images/header-images/${colorBG[randomIndex][1]})`);
 
 
 // initial header loading animation
