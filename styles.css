@@ -642,6 +642,7 @@ footer p {
 @media (min-width: 1300px) {
     header h1 { font-size: 5.5rem; }
     header p { font-size: 2.5rem; }
+    #header-resume-button { transform: scale(1.4); }
 }
 
 @media (min-width: 1500px) {
@@ -661,8 +662,6 @@ footer p {
     header h1 { font-size: 6rem; }
 
     header p { font-size: 2.4rem; }
-
-    #header-resume-button { transform: scale(1.4); }
 
     #project-item-container {
         display: grid;
