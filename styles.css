@@ -99,7 +99,7 @@ body::-webkit-scrollbar {
     align-items: center;
     display: flex;
 
-    animation: slide-right 1.7s ease-in-out forwards 1.9s;
+    animation: slide-right 1.6s ease-in-out forwards 1.3s;
 }
 
 @keyframes slide-right {

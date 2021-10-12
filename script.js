@@ -19,7 +19,7 @@ const pageLoadName = document.querySelector("#page-load-name");
 const pageLoadNameCover = document.querySelector("#page-load-name-cover");
 
 const headerMain = document.querySelector("header h1");
-const headerParagragh = document.querySelector("header p");
+const headerParagraph = document.querySelector("header p");
 const headerResumeButton = document.querySelector("#header-resume-button");
 const navigation = document.querySelector("nav");
 const scrollDownButton = document.querySelector("#scroll-down-button");
@@ -28,34 +28,35 @@ window.addEventListener("load", () => {
 
     // animating cover section (occurs every load)
     pageLoadNameCover.style.transformOrigin = "left";
-    pageLoadNameCover.style.animation = "grow-right 0.8s ease-in-out forwards 0.3s";
+    pageLoadNameCover.style.animation = "grow-right 0.6s ease-in-out forwards 0.3s";
 
     setTimeout(() => {
         pageLoadName.style.color = "var(--color-primary)";
 
         pageLoadNameCover.style.transformOrigin = "right";
-        pageLoadNameCover.style.animation = "shrink-right 0.8s ease-in-out forwards";
-    }, 1100);
+        pageLoadNameCover.style.animation = "shrink-right 0.6s ease-in-out forwards";
+    }, 900);
 
     // only animate header section if at top of page and in desktop mode
-    if (window.pageYOffset === 0 && window.innerWidth > 700) {
+    // header fade in animation
+    // if (window.pageYOffset === 0 && window.innerWidth > 700) {
 
-        // animating header section
-        headerMain.style.opacity = "0";
-        headerMain.style.animation = "fade 1s ease-in-out forwards 3s";
+    //     // animating header section
+    //     headerMain.style.opacity = "0";
+    //     headerMain.style.animation = "fade 1s ease-in-out forwards 3s";
 
-        headerParagragh.style.opacity = "0";
-        headerParagragh.style.animation = "fade 1s ease-in-out forwards 4s";
+    //     headerParagraph.style.opacity = "0";
+    //     headerParagraph.style.animation = "fade 1s ease-in-out forwards 4s";
 
-        headerResumeButton.style.opacity = "0";
-        headerResumeButton.style.animation = "fade 1s ease-in-out forwards 5s";
+    //     headerResumeButton.style.opacity = "0";
+    //     headerResumeButton.style.animation = "fade 1s ease-in-out forwards 5s";
 
-        navigation.style.opacity = "0";
-        navigation.style.animation = "fade 1s ease-in-out forwards 6s";
+    //     navigation.style.opacity = "0";
+    //     navigation.style.animation = "fade 1s ease-in-out forwards 6s";
 
-        scrollDownButton.style.opacity = "0";
-        scrollDownButton.style.animation = "up-and-down 2.5s ease-in-out infinite, fade 1s ease-in-out forwards 6s";
-    }
+    //     scrollDownButton.style.opacity = "0";
+    //     scrollDownButton.style.animation = "up-and-down 2.5s ease-in-out infinite, fade 1s ease-in-out forwards 6s";
+    // }
 });
 
 
