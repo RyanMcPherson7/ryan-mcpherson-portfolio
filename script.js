@@ -20,7 +20,6 @@ document.documentElement.style.setProperty(
   `url(images/header-images/${colorBG[randomIndex][1]})`
 );
 
-
 // initial header loading animation
 const pageLoadCover = document.querySelector('#page-load-cover');
 const pageLoadName = document.querySelector('#page-load-name');
@@ -46,7 +45,6 @@ window.addEventListener('load', () => {
       'shrink-right 0.6s ease-in-out forwards';
   }, 900);
 });
-
 
 // scrolling down page events
 const navContainer = document.querySelector('#nav-container');
@@ -80,11 +78,9 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
 // focusing and unfocusing on input areas triggers underline effect
 const inputUnderlineList = document.querySelectorAll('.inputUnderlineEffect');
 const inputList = document.querySelectorAll('.form-input'); // targets non-hidden input
-
 
 // events for text input
 for (let i = 0; i < inputList.length; i++) {
@@ -97,7 +93,6 @@ for (let i = 0; i < inputList.length; i++) {
   });
 }
 
-
 // clicking the submit button sends the user a message
 const contactSubmitButton = document.querySelector('#contact-submit-button');
 
@@ -107,7 +102,6 @@ contactSubmitButton.addEventListener('click', () => {
 
   alert('Your message has been sent!');
 });
-
 
 // smooth scroll with jQuery
 $(document).ready(function () {
