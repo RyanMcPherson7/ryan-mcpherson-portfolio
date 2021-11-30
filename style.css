@@ -366,6 +366,10 @@ header p {
   background-image: url(images/project-images/Minesweeper.png);
 }
 
+#hash-map-project .project-image {
+  background-image: url(images/project-images/hash-map.PNG);
+}
+
 #image-manipulator-project .project-image {
   background-image: url(images/project-images/image-manipulator.png);
 }
