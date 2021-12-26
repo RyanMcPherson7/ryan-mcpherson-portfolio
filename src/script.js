@@ -1,4 +1,6 @@
-// randomly determine header background image and color combination
+// ====================================================
+// randomly choose header bg and color combo
+// ====================================================
 const colorBG = [
   ['#c884ff', 'bg1.jpg'],
   ['#33e0ff', 'bg2.jpg'],
@@ -20,7 +22,9 @@ document.documentElement.style.setProperty(
   `url(../assets/header-images/${colorBG[randomIndex][1]})`
 );
 
+// ====================================================
 // initial header loading animation
+// ====================================================
 const pageLoadCover = document.querySelector('#page-load-cover');
 const pageLoadName = document.querySelector('#page-load-name');
 const pageLoadNameCover = document.querySelector('#page-load-name-cover');
@@ -32,7 +36,6 @@ const navigation = document.querySelector('nav');
 const scrollDownButton = document.querySelector('#scroll-down-button');
 
 window.addEventListener('load', () => {
-  // animating cover section (occurs every load)
   pageLoadNameCover.style.transformOrigin = 'left';
   pageLoadNameCover.style.animation =
     'grow-right 0.6s ease-in-out forwards 0.3s';
@@ -46,21 +49,26 @@ window.addEventListener('load', () => {
   }, 900);
 });
 
+// ====================================================
 // scrolling down page events
+// ====================================================
 const navContainer = document.querySelector('#nav-container');
 const resumeBottomButton = document.querySelector('#resume-bottom-button');
 
 window.addEventListener('scroll', () => {
-  // check if not at top of page to convert nav background from transparent to solid
+  // ====================================================
+  // set navbar to solid color if not at top of page
+  // ====================================================
   if (window.pageYOffset <= 0) {
     navContainer.style.backgroundColor = 'transparent';
   } else {
     navContainer.style.backgroundColor = 'var(--color-secondary-light)';
   }
 
-  // check if scrolled past header section to display bottom right resume button
+  // ====================================================
+  // display bottom resume button if scrolled past header
+  // ====================================================
   if (window.pageYOffset > window.innerHeight - 330) {
-    // check to see if style has already been applied.. if so, don't execute
     if (resumeBottomButton.style.bottom != '4vw') {
       resumeBottomButton.style.transition = 'bottom 0.5s ease-in-out';
       resumeBottomButton.style.bottom = '4vw';
@@ -70,7 +78,6 @@ window.addEventListener('scroll', () => {
     if (resumeBottomButton.style.right != '-90px') {
       resumeBottomButton.style.transition = 'right 0.5s ease-in-out';
       resumeBottomButton.style.right = '-90px';
-      // added 500ms delay for animation to work properly
       setTimeout(() => {
         resumeBottomButton.style.bottom = '-90px';
       }, 500);
@@ -78,11 +85,12 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// focusing and unfocusing on input areas triggers underline effect
+// ====================================================
+// focus animation for contact form input
+// ====================================================
 const inputUnderlineList = document.querySelectorAll('.inputUnderlineEffect');
-const inputList = document.querySelectorAll('.form-input'); // targets non-hidden input
+const inputList = document.querySelectorAll('.form-input');
 
-// events for text input
 for (let i = 0; i < inputList.length; i++) {
   inputList[i].addEventListener('focus', () => {
     inputUnderlineList[i].style.transform = 'scaleX(1)';
@@ -93,21 +101,23 @@ for (let i = 0; i < inputList.length; i++) {
   });
 }
 
-// clicking the submit button sends the user a message
+// ====================================================
+// send user alert if input correct and submit pressed
+// ====================================================
 const contactSubmitButton = document.querySelector('#contact-submit-button');
 
 contactSubmitButton.addEventListener('click', () => {
-  // checking to see if all input has been entered
   for (let i = 0; i < inputList.length; i++) if (!inputList[i].value) return;
 
   alert('Your message has been sent!');
 });
 
+// ====================================================
 // smooth scroll with jQuery
-$(document).ready(function () {
+// ====================================================
+$(document).ready(() => {
   var scrollLink = $('.scroll');
 
-  // Smooth scrolling
   scrollLink.click(function (e) {
     e.preventDefault();
     $('body,html').animate(
