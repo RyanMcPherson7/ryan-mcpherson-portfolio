@@ -62,7 +62,7 @@ button::before {
   z-index: -1;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .special {
@@ -255,7 +255,7 @@ header p {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--color-secondary);
-  border-radius: 2rem;
+  border-radius: 10rem;
 }
 
 /* scroll down arrow */
@@ -317,7 +317,7 @@ header p {
   border-radius: 50%;
 
   transform: scale(0);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 @keyframes fade {
@@ -359,11 +359,11 @@ header p {
 }
 
 #assignments-but-automated-project .project-image {
-  background-image: url(../assets/project-images/assignments-but-automated.png);
+  background-image: url(../assets/project-images/assignments-but-automated.PNG);
 }
 
 #portfolio-project .project-image {
-  background-image: url(../assets/project-images/portfolio.png);
+  background-image: url(../assets/project-images/Portfolio.PNG);
 }
 
 #avl-tree-container-project .project-image {
