@@ -2,7 +2,7 @@
 
 :root {
   --header-img: url(../assets/header-images/bg7.jpg);
-  --color-primary: #e2e8f0;
+  --color-primary: #ffffff;
   --color-secondary: #101218;
   --color-secondary-light: #22262c;
   --color-secondary-light-light: #a7b1c3;
@@ -67,6 +67,11 @@ button::before {
 
 .special {
   color: var(--color-accent);
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 /* turn on scrollbar */
@@ -349,12 +354,16 @@ header p {
 }
 
 /* individual project images */
+#six-degrees-of-spotify-project .project-image {
+  background-image: url(../assets/project-images/six-degrees-of-spotify.png);
+}
+
 #assignments-but-automated-project .project-image {
-  background-image: url(../assets/project-images/assignments-but-automated.PNG);
+  background-image: url(../assets/project-images/assignments-but-automated.png);
 }
 
 #portfolio-project .project-image {
-  background-image: url(../assets/project-images/Portfolio.PNG);
+  background-image: url(../assets/project-images/portfolio.png);
 }
 
 #avl-tree-container-project .project-image {
