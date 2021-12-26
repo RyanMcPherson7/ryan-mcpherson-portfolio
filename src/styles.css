@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
 
 :root {
-  --header-img: url(images/header-images/bg7.jpg);
-
+  --header-img: url(../assets/header-images/bg7.jpg);
   --color-primary: #e2e8f0;
   --color-secondary: #101218;
   --color-secondary-light: #22262c;
@@ -246,12 +245,12 @@ header p {
 }
 
 #header-resume-button {
-  padding: 0.75rem 1.5rem;
-  width: 11rem;
+  padding: 0.75rem 2rem;
   margin: 0 auto;
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--color-secondary);
+  border-radius: 2rem;
 }
 
 /* scroll down arrow */
@@ -351,27 +350,27 @@ header p {
 
 /* individual project images */
 #assignments-but-automated-project .project-image {
-  background-image: url(images/project-images/assignments-but-automated.PNG);
+  background-image: url(../assets/project-images/assignments-but-automated.PNG);
 }
 
 #portfolio-project .project-image {
-  background-image: url(images/project-images/Portfolio.PNG);
+  background-image: url(../assets/project-images/Portfolio.PNG);
 }
 
 #avl-tree-container-project .project-image {
-  background-image: url(images/project-images/avl-tree.PNG)
+  background-image: url(../assets/project-images/avl-tree.PNG)
 }
 
 #minesweeper-project .project-image {
-  background-image: url(images/project-images/Minesweeper.png);
+  background-image: url(../assets/project-images/Minesweeper.png);
 }
 
 #hash-map-project .project-image {
-  background-image: url(images/project-images/hash-map.PNG);
+  background-image: url(../assets/project-images/hash-map.PNG);
 }
 
 #image-manipulator-project .project-image {
-  background-image: url(images/project-images/image-manipulator.png);
+  background-image: url(../assets/project-images/image-manipulator.png);
 }
 
 .project-image {

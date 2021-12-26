@@ -17,7 +17,7 @@ document.documentElement.style.setProperty(
 );
 document.documentElement.style.setProperty(
   '--header-img',
-  `url(images/header-images/${colorBG[randomIndex][1]})`
+  `url(../assets/header-images/${colorBG[randomIndex][1]})`
 );
 
 // initial header loading animation
