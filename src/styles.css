@@ -350,7 +350,7 @@ header p {
   color: var(--color-primary);
   margin-bottom: 2rem;
   border-radius: 2rem;
-  max-width: 30rem;
+  /* max-width: 30rem; */
 }
 
 /* individual project images */
@@ -654,7 +654,8 @@ footer p {
   }
 
   .project {
-    max-width: 40rem;
+    /* max-width: 40rem; */
+    width: 40rem;
   }
 
   .project-image {
@@ -733,11 +734,12 @@ footer p {
     font-size: 4rem;
   }
 
-  nav,
+  /* nav, */
   header,
   #project-container,
   #contact-container {
-    max-width: 1500px;
+    /* max-width: 1500px; */
+    max-width: 90vw;
     margin: 0 auto;
   }
 
