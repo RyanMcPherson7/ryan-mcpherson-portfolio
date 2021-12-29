@@ -350,7 +350,6 @@ header p {
   color: var(--color-primary);
   margin-bottom: 2rem;
   border-radius: 2rem;
-  /* max-width: 30rem; */
 }
 
 /* individual project images */
@@ -654,7 +653,6 @@ footer p {
   }
 
   .project {
-    /* max-width: 40rem; */
     width: 40rem;
   }
 
@@ -734,12 +732,10 @@ footer p {
     font-size: 4rem;
   }
 
-  /* nav, */
   header,
   #project-container,
   #contact-container {
-    /* max-width: 1500px; */
-    max-width: 90vw;
+    max-width: 1500px;
     margin: 0 auto;
   }
 
@@ -776,5 +772,16 @@ footer p {
     margin-right: auto;
     flex-direction: column;
     justify-content: flex-start;
+  }
+}
+
+@media (min-width: 2000px) {
+  nav h1 a, 
+  nav ul li {
+    font-size: 2rem;
+  }
+
+  .project {
+    width: 50rem;
   }
 }
