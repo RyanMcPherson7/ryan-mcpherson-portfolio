@@ -669,6 +669,10 @@ footer p {
     padding: 0.5rem 4rem;
   }
 
+  .project-tool-list {
+    padding-top: 0.7rem;
+  }
+
   .project-tool-list img {
     width: 2rem;
     height: 2rem;
