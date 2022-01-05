@@ -71,7 +71,7 @@ button::before {
 
 ::selection {
   background-color: var(--color-accent);
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 /* turn on scrollbar */
@@ -632,6 +632,7 @@ footer p {
   }
 
   #header-resume-button {
+    margin-top: 1rem;
     transform: scale(1.25);
   }
 
