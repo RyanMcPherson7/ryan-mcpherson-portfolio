@@ -177,7 +177,7 @@ nav h1 a {
   font-size: 1.3rem;
   padding: 1rem;
   color: var(--color-primary);
-  transition: color 0.4s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 nav ul {
@@ -193,13 +193,13 @@ nav ul li {
 
 nav ul li a {
   color: var(--color-primary);
-  transition: 0.4s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 /* menu toggle button */
 nav i {
   padding: 0.8rem 1rem 0.8rem 0;
-  transition: color 0.4s ease-in-out;
+  transition: color 0.2s ease-in-out;
   font-size: 2rem;
   color: var(--color-primary);
 }
@@ -279,7 +279,7 @@ header p {
 
 #scroll-down-button i {
   color: var(--color-primary);
-  transition: color 0.4s ease-in-out;
+  transition: color 0.2s ease-in-out;
   font-size: 4rem;
 }
 
@@ -413,21 +413,17 @@ header p {
   color: var(--color-secondary-light-light);
 }
 
-.project-tool-list {
-  padding: 0 1rem;
-  margin-bottom: 0.5rem;
-}
-
 .project-tool-list img {
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2rem;
+  height: 2rem;
   margin: 0 0.2rem;
 }
 
+/* font awesome icons */
 #project-container i {
   color: var(--color-secondary-light-light);
   margin-bottom: 1rem;
-  transition: color 0.4s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .project-links {
@@ -533,7 +529,7 @@ textarea:focus {
 #contact-container i {
   color: var(--color-primary);
   margin: 0 0.75rem 2rem;
-  transition: color 0.4s ease-in-out;
+  transition: color 0.2s ease-in-out;
   font-size: 3rem;
 }
 
@@ -670,13 +666,9 @@ footer p {
     padding: 0.5rem 4rem;
   }
 
-  .project-tool-list {
-    padding-top: 0.7rem;
-  }
-
   .project-tool-list img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
   }
 
   .project-details-button {
