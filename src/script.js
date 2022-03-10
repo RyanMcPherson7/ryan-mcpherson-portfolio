@@ -2,13 +2,13 @@
 // randomly choose header bg and color combo
 // ====================================================
 const colorBG = [
-  ['#c884ff', 'bg1.jpg'],
   ['#33e0ff', 'bg2.jpg'],
   ['#67ffa6', 'bg3.jpg'],
   ['#ff91c8', 'bg4.jpg'],
+  ['#ffb061', 'bg1.jpg'],
   ['#c884ff', 'bg5.jpg'],
   ['#ffe862', 'bg6.jpg'],
-  ['#5bfdba', 'bg7.jpg'],
+  // ['#5BFDCE', 'bg7.jpg'],
 ];
 
 const randomIndex = Math.floor(Math.random() * colorBG.length);
