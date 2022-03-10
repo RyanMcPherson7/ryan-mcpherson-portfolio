@@ -111,20 +111,3 @@ contactSubmitButton.addEventListener('click', () => {
 
   alert('Your message has been sent!');
 });
-
-// ====================================================
-// smooth scroll with jQuery
-// ====================================================
-$(document).ready(() => {
-  var scrollLink = $('.scroll');
-
-  scrollLink.click(function (e) {
-    e.preventDefault();
-    $('body,html').animate(
-      {
-        scrollTop: $(this.hash).offset().top,
-      },
-      1500
-    );
-  });
-});
