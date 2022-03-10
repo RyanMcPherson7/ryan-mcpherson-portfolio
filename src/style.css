@@ -335,7 +335,7 @@ header p {
 /* ============================================== */
 /*                 PROJECT SECTION                */
 /* ============================================== */
-#project-container {
+#projects {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -424,7 +424,7 @@ header p {
 }
 
 /* font awesome icons */
-#project-container i {
+#projects i {
   color: var(--color-secondary-light-light);
   margin-bottom: 1rem;
   transition: color 0.2s ease-in-out;
@@ -451,14 +451,14 @@ header p {
   padding-top: 6rem;
 }
 
-#contact-container p {
+#contact p {
   text-align: center;
   font-weight: bold;
   margin-bottom: 1rem;
   font-size: 1.1rem;
 }
 
-#contact-container form {
+#contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -531,7 +531,7 @@ textarea:focus {
   justify-content: center;
 }
 
-#contact-container i {
+#contact i {
   color: var(--color-primary);
   margin: 0 0.75rem 2rem;
   transition: color 0.2s ease-in-out;
@@ -597,11 +597,11 @@ footer p {
     transform: scale(1.5);
   }
 
-  #project-container i:hover {
+  #projects i:hover {
     color: var(--color-accent);
   }
 
-  #contact-container i:hover {
+  #contact i:hover {
     color: var(--color-accent);
   }
 
@@ -688,7 +688,7 @@ footer p {
     margin-bottom: 1.7rem;
   }
 
-  #contact-container p {
+  #contact p {
     font-size: 1.5rem;
   }
 
@@ -709,7 +709,7 @@ footer p {
     width: 40rem;
   }
 
-  #contact-container i {
+  #contact i {
     font-size: 4rem;
   }
 
@@ -742,8 +742,8 @@ footer p {
   }
 
   header,
-  #project-container,
-  #contact-container {
+  #projects,
+  #contact {
     max-width: 1500px;
     margin: 0 auto;
   }
