@@ -361,6 +361,10 @@ header p {
   background-image: url(../assets/project-images/six-degrees-of-spotify.png);
 }
 
+#push-pin-project .project-image {
+  background-image: url(../assets/project-images/push-pin.png);
+}
+
 #assignments-but-automated-project .project-image {
   background-image: url(../assets/project-images/assignments-but-automated.PNG);
 }
@@ -426,7 +430,6 @@ header p {
 /* font awesome icons */
 #projects i {
   color: var(--color-secondary-light-light);
-  margin-bottom: 1rem;
   transition: color 0.2s ease-in-out;
 }
 
@@ -435,6 +438,7 @@ header p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .project-links a {
