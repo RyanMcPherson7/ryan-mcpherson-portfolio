@@ -428,7 +428,8 @@
           method="POST"
         >
           <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" style="display: none" />
+          <!-- <input type="hidden" name="_captcha" value="false" /> -->
           <input
             type="hidden"
             name="_next"
@@ -509,7 +510,7 @@
     <!-- linking scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({ disable: 'mobile' });
+      AOS.init({ disable: 'mobile' })
     </script>
 
     <script defer src="./src/script.js"></script>

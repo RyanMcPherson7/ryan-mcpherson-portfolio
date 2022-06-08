@@ -374,7 +374,7 @@ header p {
 }
 
 #avl-tree-container-project .project-image {
-  background-image: url(../assets/project-images/avl-tree.PNG)
+  background-image: url(../assets/project-images/avl-tree.PNG);
 }
 
 #minesweeper-project .project-image {
@@ -789,7 +789,7 @@ footer p {
 }
 
 @media (min-width: 2000px) {
-  nav h1 a, 
+  nav h1 a,
   nav ul li {
     font-size: 2rem;
   }
