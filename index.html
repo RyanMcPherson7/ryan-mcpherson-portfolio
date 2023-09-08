@@ -67,7 +67,7 @@
 
     <div id="nav-container">
       <nav>
-        <h1><a href="/">Ryan McPherson</a></h1>
+        <h1><a href="/" id="nav-home-name">Ryan</a></h1>
         <ul>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -82,6 +82,17 @@
         </div>
       </nav>
     </div>
+
+    <!-- collapsed resume button on navbar -->
+    <a
+      href="assets/resume.pdf"
+      target="_blank"
+      id="collapsed-resume-button-wrapper"
+    >
+      <div id="collapsed-resume-button">
+        <i class="fas fa-file-alt"></i>
+      </div>
+    </a>
 
     <!-- header -->
 
@@ -106,13 +117,6 @@
         </a>
       </header>
     </div>
-
-    <!-- bottom right resume button -->
-    <a href="assets/resume.pdf" target="_blank">
-      <div id="resume-bottom-button">
-        <i class="fas fa-file-alt"></i>
-      </div>
-    </a>
 
     <!-- projects -->
 
@@ -548,7 +552,7 @@
               required
             ></textarea>
           </div>
-          <button type="submit" id="contact-submit-button">Send</button>
+          <button type="submit" id="contact-submit-button">Send!</button>
         </form>
 
         <div

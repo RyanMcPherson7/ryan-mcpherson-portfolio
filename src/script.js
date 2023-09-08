@@ -2,10 +2,10 @@
 // randomly choose header bg and color combo
 // ====================================================
 const colorBG = [
+  ['#ffb061', 'bg1.jpg'],
   ['#33e0ff', 'bg2.jpg'],
   ['#67ffa6', 'bg3.jpg'],
   ['#ff91c8', 'bg4.jpg'],
-  ['#ffb061', 'bg1.jpg'],
   ['#c884ff', 'bg5.jpg'],
   ['#ffe862', 'bg6.jpg'],
   // ['#5BFDCE', 'bg7.jpg'],
@@ -21,6 +21,16 @@ document.documentElement.style.setProperty(
   '--header-img',
   `url(../assets/header-images/${colorBG[randomIndex][1]})`
 )
+
+// ====================================================
+// set navbar name based on screen width
+// ====================================================
+const navHomeName = document.getElementById('nav-home-name')
+navHomeName.textContent = window.innerWidth > 700 ? 'Ryan McPherson' : 'Ryan'
+
+window.addEventListener('resize', () => {
+  navHomeName.textContent = window.innerWidth > 700 ? 'Ryan McPherson' : 'Ryan'
+})
 
 // ====================================================
 // initial header loading animation
@@ -52,7 +62,7 @@ window.addEventListener('load', () => {
 // scrolling down page events
 // ====================================================
 const navContainer = document.querySelector('#nav-container')
-const resumeBottomButton = document.querySelector('#resume-bottom-button')
+const collapsedResumeButton = document.querySelector('#collapsed-resume-button')
 
 window.addEventListener('scroll', () => {
   // ====================================================
@@ -65,23 +75,10 @@ window.addEventListener('scroll', () => {
   }
 
   // ====================================================
-  // display bottom resume button if scrolled past header
+  // display collapsed resume button if scrolled past header
   // ====================================================
-  if (window.pageYOffset > window.innerHeight - 330) {
-    if (resumeBottomButton.style.bottom != '4vw') {
-      resumeBottomButton.style.transition = 'bottom 0.5s ease-in-out'
-      resumeBottomButton.style.bottom = '4vw'
-      resumeBottomButton.style.right = '4vw'
-    }
-  } else {
-    if (resumeBottomButton.style.right != '-90px') {
-      resumeBottomButton.style.transition = 'right 0.5s ease-in-out'
-      resumeBottomButton.style.right = '-90px'
-      setTimeout(() => {
-        resumeBottomButton.style.bottom = '-90px'
-      }, 500)
-    }
-  }
+  collapsedResumeButton.style.top =
+    window.innerHeight / 1.75 - window.scrollY < 0 ? '15px' : '-90px'
 })
 
 // ====================================================

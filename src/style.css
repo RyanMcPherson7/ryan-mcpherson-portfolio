@@ -286,11 +286,17 @@ header p {
   font-size: 4rem;
 }
 
-/* bottom right resume button */
-#resume-bottom-button {
+/* collapsed resume button on navbar */
+#collapsed-resume-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#collapsed-resume-button {
   position: fixed;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 65px;
+  height: 65px;
   background-color: var(--color-accent);
   border-radius: 5rem;
   display: flex;
@@ -298,17 +304,17 @@ header p {
   justify-content: center;
   z-index: 10000;
   overflow: hidden;
-  bottom: -90px;
-  right: -90px;
+  top: -90px;
+  transition: top 0.5s ease-in-out;
 }
 
-#resume-bottom-button i {
-  font-size: 2.3rem;
+#collapsed-resume-button i {
+  font-size: 35px;
   color: var(--color-secondary);
   padding: 0.5rem;
 }
 
-#resume-bottom-button::before {
+#collapsed-resume-button::before {
   content: '';
   position: absolute;
   top: 0;
@@ -597,7 +603,7 @@ footer p {
     cursor: pointer;
   }
 
-  #resume-bottom-button:hover::before {
+  #collapsed-resume-button:hover::before {
     transform: scale(1.5);
   }
 
@@ -648,8 +654,8 @@ footer p {
     transform: scale(1.25);
   }
 
-  #resume-bottom-button {
-    transform: scale(1.25);
+  #collapsed-resume-button {
+    transform: scale(1.1);
   }
 
   #scroll-down-button {
