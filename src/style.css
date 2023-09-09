@@ -339,6 +339,66 @@ header p {
 }
 
 /* ============================================== */
+/*               EXPERIENCE SECTION               */
+/* ============================================== */
+#experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+#experience-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 5rem 0 2rem;
+}
+
+.experience-mobile {
+  background-color: var(--color-secondary-light);
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  padding: 20px;
+}
+
+.logo-role-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+}
+
+.experience-overview {
+  font-weight: 600;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  color: var(--color-secondary-light-light);
+  margin-bottom: 15px;
+}
+
+.experience-tool-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.experience-tool-list img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.2rem;
+}
+
+/* ============================================== */
 /*                 PROJECT SECTION                */
 /* ============================================== */
 #projects {
@@ -664,6 +724,11 @@ footer p {
 
   #scroll-down-button i {
     font-size: 6rem;
+  }
+
+  .experience-tool-list img {
+    width: 2.2rem;
+    height: 2.2rem;
   }
 
   #project-section-title,
