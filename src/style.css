@@ -198,11 +198,9 @@ nav ul li a {
   transition: 0.2s ease-in-out;
 }
 
-/* menu toggle button */
 nav i {
   padding: 0.8rem 1rem 0.8rem 0;
-  transition: color 0.2s ease-in-out;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--color-primary);
 }
 
@@ -295,8 +293,8 @@ header p {
 
 #collapsed-resume-button {
   position: fixed;
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   background-color: var(--color-accent);
   border-radius: 5rem;
   display: flex;
@@ -309,7 +307,7 @@ header p {
 }
 
 #collapsed-resume-button i {
-  font-size: 35px;
+  font-size: 30px;
   color: var(--color-secondary);
   padding: 0.5rem;
 }
@@ -699,17 +697,19 @@ footer p {
     font-size: 3rem;
   }
 
-  nav ul {
-    display: flex;
-  }
-
   nav h1 a {
     font-size: 1.5rem;
   }
 
-  /* stop displaying the toggle list */
-  #mobile-link-icons {
-    display: none;
+  nav i {
+    padding: 1rem 1rem 1rem 0;
+    transition: color 0.2s ease-in-out;
+    font-size: 2rem;
+    color: var(--color-primary);
+  }
+
+  nav i:hover {
+    color: var(--color-accent);
   }
 
   /* parallax effect for desktop view */
@@ -735,7 +735,12 @@ footer p {
   }
 
   #collapsed-resume-button {
-    transform: scale(1.1);
+    width: 75px;
+    height: 75px;
+  }
+
+  #collapsed-resume-button i {
+    font-size: 35px;
   }
 
   #scroll-down-button {
@@ -840,17 +845,38 @@ footer p {
   }
 }
 
+@media (min-width: 900px) {
+  nav ul {
+    display: flex;
+  }
+
+  #mobile-link-icons {
+    display: none;
+  }
+}
+
 /* large screen devices */
 
 @media (min-width: 1300px) {
   header h1 {
     font-size: 5.5rem;
   }
+
   header p {
     font-size: 2.5rem;
   }
+
   #header-resume-button {
     transform: scale(1.4);
+  }
+
+  #collapsed-resume-button {
+    width: 80px;
+    height: 80px;
+  }
+
+  #collapsed-resume-button i {
+    font-size: 40px;
   }
 }
 
