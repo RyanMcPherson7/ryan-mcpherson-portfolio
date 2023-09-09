@@ -26,10 +26,10 @@ document.documentElement.style.setProperty(
 // set navbar name based on screen width
 // ====================================================
 const navHomeName = document.getElementById('nav-home-name')
-navHomeName.textContent = window.innerWidth > 700 ? 'Ryan McPherson' : 'Ryan'
+navHomeName.textContent = window.innerWidth >= 700 ? 'Ryan McPherson' : 'Ryan'
 
 window.addEventListener('resize', () => {
-  navHomeName.textContent = window.innerWidth > 700 ? 'Ryan McPherson' : 'Ryan'
+  navHomeName.textContent = window.innerWidth >= 700 ? 'Ryan McPherson' : 'Ryan'
 })
 
 // ====================================================
