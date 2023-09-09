@@ -198,11 +198,9 @@ nav ul li a {
   transition: 0.2s ease-in-out;
 }
 
-/* menu toggle button */
 nav i {
   padding: 0.8rem 1rem 0.8rem 0;
-  transition: color 0.2s ease-in-out;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--color-primary);
 }
 
@@ -295,8 +293,8 @@ header p {
 
 #collapsed-resume-button {
   position: fixed;
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   background-color: var(--color-accent);
   border-radius: 5rem;
   display: flex;
@@ -309,7 +307,7 @@ header p {
 }
 
 #collapsed-resume-button i {
-  font-size: 35px;
+  font-size: 30px;
   color: var(--color-secondary);
   padding: 0.5rem;
 }
@@ -336,6 +334,86 @@ header p {
   100% {
     opacity: 1;
   }
+}
+
+/* ============================================== */
+/*               EXPERIENCE SECTION               */
+/* ============================================== */
+#experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+#experience-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 5rem 0 2rem;
+}
+
+.experience-mobile {
+  background-color: var(--color-secondary-light);
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  padding: 20px;
+}
+
+.logo-role-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+}
+
+.experience-overview {
+  font-weight: 600;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  color: var(--color-secondary-light-light);
+  margin-bottom: 15px;
+}
+
+.experience-tool-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.experience-tool-list img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.2rem;
+}
+
+#experiences-for-desktop {
+  display: none;
+}
+
+.experience-for-desktop {
+  background-color: var(--color-secondary-light);
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  padding: 20px;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 640px;
+}
+
+.experience-for-desktop-content p {
+  font-size: 1rem;
 }
 
 /* ============================================== */
@@ -619,17 +697,19 @@ footer p {
     font-size: 3rem;
   }
 
-  nav ul {
-    display: flex;
-  }
-
   nav h1 a {
     font-size: 1.5rem;
   }
 
-  /* stop displaying the toggle list */
-  #mobile-link-icons {
-    display: none;
+  nav i {
+    padding: 1rem 1rem 1rem 0;
+    transition: color 0.2s ease-in-out;
+    font-size: 2rem;
+    color: var(--color-primary);
+  }
+
+  nav i:hover {
+    color: var(--color-accent);
   }
 
   /* parallax effect for desktop view */
@@ -655,7 +735,12 @@ footer p {
   }
 
   #collapsed-resume-button {
-    transform: scale(1.1);
+    width: 75px;
+    height: 75px;
+  }
+
+  #collapsed-resume-button i {
+    font-size: 35px;
   }
 
   #scroll-down-button {
@@ -666,6 +751,34 @@ footer p {
     font-size: 6rem;
   }
 
+  #experiences-for-mobile {
+    display: none;
+  }
+
+  #experiences-for-desktop {
+    display: block;
+  }
+
+  .experience-tool-list {
+    justify-content: flex-start;
+  }
+
+  .role {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+  }
+
+  .company-logo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .experience-tool-list img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  #experience-section-title,
   #project-section-title,
   #contact-section-title {
     font-size: 3.5rem;
@@ -732,17 +845,38 @@ footer p {
   }
 }
 
+@media (min-width: 900px) {
+  nav ul {
+    display: flex;
+  }
+
+  #mobile-link-icons {
+    display: none;
+  }
+}
+
 /* large screen devices */
 
 @media (min-width: 1300px) {
   header h1 {
     font-size: 5.5rem;
   }
+
   header p {
     font-size: 2.5rem;
   }
+
   #header-resume-button {
     transform: scale(1.4);
+  }
+
+  #collapsed-resume-button {
+    width: 80px;
+    height: 80px;
+  }
+
+  #collapsed-resume-button i {
+    font-size: 40px;
   }
 }
 
@@ -752,6 +886,7 @@ footer p {
   }
 
   header,
+  #experience,
   #projects,
   #contact {
     max-width: 1500px;
@@ -768,6 +903,20 @@ footer p {
 
   header p {
     font-size: 2.4rem;
+  }
+
+  .experience-for-desktop {
+    width: 1300px;
+    gap: 25px;
+  }
+
+  .company-logo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .role {
+    font-size: 2rem;
   }
 
   #project-item-container {
