@@ -449,6 +449,10 @@ header p {
   background-image: url(../assets/project-images/push-pin.png);
 }
 
+#breathe-project .project-image {
+  background-image: url(../assets/project-images/breathe.png);
+}
+
 #assignments-but-automated-project .project-image {
   background-image: url(../assets/project-images/assignments-but-automated.PNG);
 }
