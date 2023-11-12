@@ -458,7 +458,7 @@ header p {
 }
 
 #portfolio-project .project-image {
-  background-image: url(../assets/project-images/test.PNG);
+  background-image: url(../assets/project-images/portfolio.png);
 }
 
 #avl-tree-container-project .project-image {
@@ -816,7 +816,7 @@ footer p {
   }
 
   #assignments-but-automated-project .project-image {
-    background-image: url(../assets/project-images/assignments-but-automated-desktop.PNG);
+    background-image: url(../assets/project-images/assignments-but-automated-desktop.png);
   }
 
   #contact p {
