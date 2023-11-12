@@ -454,7 +454,7 @@ header p {
 }
 
 #assignments-but-automated-project .project-image {
-  background-image: url(../assets/project-images/assignments-but-automated.PNG);
+  background-image: url(../assets/project-images/assignments-but-automated-mobile.png);
 }
 
 #portfolio-project .project-image {
@@ -813,6 +813,10 @@ footer p {
   .project-details-button {
     transform: scale(1.25);
     margin-bottom: 1.7rem;
+  }
+
+  #assignments-but-automated-project .project-image {
+    background-image: url(../assets/project-images/assignments-but-automated-desktop.PNG);
   }
 
   #contact p {
