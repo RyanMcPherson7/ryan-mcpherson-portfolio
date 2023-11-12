@@ -39,12 +39,6 @@ const pageLoadCover = document.querySelector('#page-load-cover')
 const pageLoadName = document.querySelector('#page-load-name')
 const pageLoadNameCover = document.querySelector('#page-load-name-cover')
 
-const headerMain = document.querySelector('header h1')
-const headerParagraph = document.querySelector('header p')
-const headerResumeButton = document.querySelector('#header-resume-button')
-const navigation = document.querySelector('nav')
-const scrollDownButton = document.querySelector('#scroll-down-button')
-
 window.addEventListener('load', () => {
   pageLoadNameCover.style.transformOrigin = 'left'
   pageLoadNameCover.style.animation =

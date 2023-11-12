@@ -449,12 +449,16 @@ header p {
   background-image: url(../assets/project-images/push-pin.png);
 }
 
+#breathe-project .project-image {
+  background-image: url(../assets/project-images/breathe.png);
+}
+
 #assignments-but-automated-project .project-image {
-  background-image: url(../assets/project-images/assignments-but-automated.PNG);
+  background-image: url(../assets/project-images/assignments-but-automated-mobile.png);
 }
 
 #portfolio-project .project-image {
-  background-image: url(../assets/project-images/Portfolio.PNG);
+  background-image: url(../assets/project-images/test.PNG);
 }
 
 #avl-tree-container-project .project-image {
@@ -811,6 +815,10 @@ footer p {
     margin-bottom: 1.7rem;
   }
 
+  #assignments-but-automated-project .project-image {
+    background-image: url(../assets/project-images/assignments-but-automated-desktop.PNG);
+  }
+
   #contact p {
     font-size: 1.5rem;
   }
@@ -907,7 +915,6 @@ footer p {
 
   .experience-for-desktop {
     width: 1300px;
-    gap: 25px;
   }
 
   .company-logo {
