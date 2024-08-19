@@ -357,7 +357,7 @@ header p {
   color: var(--color-primary);
   margin-bottom: 2rem;
   border-radius: 2rem;
-  padding: 20px;
+  padding: 1.3rem;
 }
 
 .logo-role-container {
@@ -504,7 +504,7 @@ header p {
 .project p {
   font-weight: 600;
   text-align: left;
-  padding: 0 1.75rem 1rem;
+  padding: 0 1.3rem 1rem;
   font-size: 0.9rem;
   line-height: 1.6rem;
   color: var(--color-secondary-light-light);
@@ -803,7 +803,7 @@ footer p {
 
   .project p {
     font-size: 1rem;
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 2rem;
   }
 
   .project-tool-list img {
