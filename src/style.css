@@ -384,6 +384,7 @@ header p {
 
 .experience-tool-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 5px;
