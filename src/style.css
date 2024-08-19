@@ -357,7 +357,7 @@ header p {
   color: var(--color-primary);
   margin-bottom: 2rem;
   border-radius: 2rem;
-  padding: 20px;
+  padding: 1.3rem;
 }
 
 .logo-role-container {
@@ -384,6 +384,7 @@ header p {
 
 .experience-tool-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -498,12 +499,13 @@ header p {
 .project-title {
   margin: 0.5rem;
   font-size: 1.5rem;
+  padding: 0 1.3rem;
 }
 
 .project p {
   font-weight: 600;
   text-align: left;
-  padding: 0 1.75rem 1rem;
+  padding: 0 1.3rem 1rem;
   font-size: 0.9rem;
   line-height: 1.6rem;
   color: var(--color-secondary-light-light);
@@ -666,7 +668,8 @@ footer p {
   }
 }
 
-@media (min-width: 700px) {
+/* Add hover effects */
+@media (hover: hover) {
   button:hover::before {
     transform: scaleX(1);
   }
@@ -697,6 +700,12 @@ footer p {
     color: var(--color-accent);
   }
 
+  nav i:hover {
+    color: var(--color-accent);
+  }
+}
+
+@media (min-width: 700px) {
   #page-load-name {
     font-size: 3rem;
   }
@@ -710,10 +719,6 @@ footer p {
     transition: color 0.2s ease-in-out;
     font-size: 2rem;
     color: var(--color-primary);
-  }
-
-  nav i:hover {
-    color: var(--color-accent);
   }
 
   /* parallax effect for desktop view */
@@ -802,7 +807,7 @@ footer p {
 
   .project p {
     font-size: 1rem;
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 2rem;
   }
 
   .project-tool-list img {

@@ -15,11 +15,11 @@ const randomIndex = Math.floor(Math.random() * colorBG.length)
 
 document.documentElement.style.setProperty(
   '--color-accent',
-  colorBG[randomIndex][0]
+  colorBG[randomIndex][0],
 )
 document.documentElement.style.setProperty(
   '--header-img',
-  `url(../assets/header-images/${colorBG[randomIndex][1]})`
+  `url(../assets/header-images/${colorBG[randomIndex][1]})`,
 )
 
 // ====================================================
@@ -90,6 +90,28 @@ for (let i = 0; i < inputList.length; i++) {
     inputUnderlineList[i].style.transform = 'scaleX(0)'
   })
 }
+
+// ====================================================
+// Rick Roll ( ͡° ͜ʖ ͡°)
+// ====================================================
+const rickRollLink = document.getElementById('rick-roll-link')
+const rickRollIcon = document.getElementById('rick-roll-icon')
+
+rickRollIcon.addEventListener('mouseover', () => {
+  rickRollIcon.innerHTML = '🎣'
+})
+
+rickRollLink.addEventListener('focus', () => {
+  rickRollIcon.innerHTML = '🎣'
+})
+
+rickRollIcon.addEventListener('mouseout', () => {
+  rickRollIcon.innerHTML = '❤️'
+})
+
+rickRollLink.addEventListener('blur', () => {
+  rickRollIcon.innerHTML = '❤️'
+})
 
 // ====================================================
 // send user alert if input correct and submit pressed
