@@ -667,7 +667,8 @@ footer p {
   }
 }
 
-@media (min-width: 700px) {
+/* Add hover effects */
+@media (hover: hover) {
   button:hover::before {
     transform: scaleX(1);
   }
@@ -698,6 +699,12 @@ footer p {
     color: var(--color-accent);
   }
 
+  nav i:hover {
+    color: var(--color-accent);
+  }
+}
+
+@media (min-width: 700px) {
   #page-load-name {
     font-size: 3rem;
   }
@@ -711,10 +718,6 @@ footer p {
     transition: color 0.2s ease-in-out;
     font-size: 2rem;
     color: var(--color-primary);
-  }
-
-  nav i:hover {
-    color: var(--color-accent);
   }
 
   /* parallax effect for desktop view */
