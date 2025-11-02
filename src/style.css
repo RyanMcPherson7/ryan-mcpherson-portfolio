@@ -736,6 +736,7 @@ footer p {
 
   header p {
     font-size: 1.75rem;
+    max-width: 1200px;
   }
 
   #header-resume-button {
